@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Input, Button, Select } from "antd";
@@ -17,9 +17,18 @@ const Contact = () => {
     message: "",
   });
 
+// service_za49s7k
+// template_4gl9eio
+// ypleSUA3YKg2F36nq
   const [loading, setLoading] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
-  const [data, setData] = useState({ lat: null, lng: null });
+
+  const [location, setLocation] = useState("Kolkata");
+  const chageLocation = (value) => {
+    setLocation(value);
+  };
+  useEffect(() => {
+    setLocation(location);
+  }, [location]);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -37,16 +46,16 @@ const Contact = () => {
     // service_penm0se
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_za49s7k',
+        'template_4gl9eio',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Jet Trade FX",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "animeshsep01@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'ypleSUA3YKg2F36nq'
       )
       .then(
         () => {
@@ -66,21 +75,6 @@ const Contact = () => {
           alert("Ahh, something went wrong. Please try again.");
         }
       );
-  };
-
-  const chageLocation = (value) => {
-    if ("Kolkata" === value) {
-      setData({
-        lat: 22.621105,
-        lng: 88.464406,
-      });
-    }
-    if ("Banglore" === value) {
-      setData({
-        lat: 12.910055,
-        lng: 77.652024,
-      });
-    }
   };
 
   return (
@@ -152,18 +146,18 @@ const Contact = () => {
             <h1 className="text-5xl font-extrabold">Our Company Location</h1>
             <div>
               <Select
-                defaultValue="Banglore"
-                style={{ width: 120, marginBottom: 5}}
+                defaultValue="Kolkata"
+                style={{ width: 120, marginBottom: 5 }}
                 onChange={chageLocation}
               >
                 <Option value="Kolkata">Kolkata</Option>
-                <Option value="Banglore">Banglore</Option>
+                <Option value="Bangalore">Banglore</Option>
                 <Option value="Jharkhand">Jharkhand</Option>
               </Select>
             </div>
 
             <div>
-            <MapContainer data={data} />
+              <MapContainer location={location} />
             </div>
           </div>
         </motion.div>

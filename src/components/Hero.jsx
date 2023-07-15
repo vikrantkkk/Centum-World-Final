@@ -9,7 +9,8 @@ const Hero = () => {
       >
         <div className="z-40">
           <h1 className={`${styles.heroHeadText} text-[#915EFF]`}>
-            Welcome to <span className="text-white uppercase"> Jet Trade FX</span>
+            Welcome to{" "}
+            <span className="text-white uppercase"> Jet Trade FX</span>
           </h1>
           <p className={`${styles.heroSubText} mt-10 text-white-100 z-40`}>
             Advance & smart forex trading platform{" "}
@@ -17,9 +18,9 @@ const Hero = () => {
             AI based smart trading apps
           </p>
         </div>
-        <div className="absolute h-full w-full ">
+        <div className="absolute h-[60%] w-[90%] sm:h-full sm:w-full top-[20%] sm:top-[5%]">
           <EarthCanvas />
-          </div>
+        </div>
       </div>
     </section>
   );

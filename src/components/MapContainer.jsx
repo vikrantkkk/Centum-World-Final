@@ -1,20 +1,38 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 const MapContainer = (props) => {
-    console.log(props.data.lat);
-    const location = {
-        lat: props.data.lat,
-        lng: props.data.lng
-      };
-      console.log(location)
+  const { location } = props;
+  console.log(location);
+
+  const locationOptions = {
+    Kolkata: {
+        lat: 22.621105,
+        lng: 88.464406,
+    },
+    Bangalore: {
+        lat: 12.910055,
+        lng: 77.652024,
+    },
+    Jharkhand: {
+      lat: 22.534754,
+      lng: 85.820367
+    }
+  };
+
+  const selectedLocation = locationOptions[location];
+  console.log(selectedLocation);
   return (
     <Map
       google={props.google}
       zoom={14}
       style={{ width: '100%', height: '100%' }}
-      initialCenter={location}
+      initialCenter={{
+        lat: selectedLocation.lat,
+        lng: selectedLocation.lng
+      }}
+      center={selectedLocation}
     >
-    <Marker position={location} />
+    <Marker position={{ lat: selectedLocation.lat, lng: selectedLocation.lng }} />
     </Map>   
   );
 };
