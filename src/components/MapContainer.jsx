@@ -2,7 +2,6 @@ import React from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 const MapContainer = (props) => {
   const { location } = props;
-  console.log(location);
 
   const locationOptions = {
     Kolkata: {
@@ -20,7 +19,6 @@ const MapContainer = (props) => {
   };
 
   const selectedLocation = locationOptions[location];
-  console.log(selectedLocation);
   return (
     <Map
       google={props.google}

@@ -43,9 +43,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' width={50} height={50} className='object-contain filter invert' />
-          <p className='text-white text-[30px] font-bold cursor-pointer flex items-center '>
+          <p className='text-white font-bold cursor-pointer flex items-center '>
             Jet Trade &nbsp;
-            <span className='sm:block hidden text-secondary text-[40px]'>FX</span>
+            <span className='sm:block hidden text-secondary'>FX</span>
           </p>
         </Link>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
