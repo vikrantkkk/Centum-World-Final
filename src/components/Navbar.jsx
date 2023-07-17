@@ -101,11 +101,11 @@ const Navbar = () => {
                   }}
                 >
                   {nav.id !== "Trade Now" ? (
-                    <a href={nav.id} target="_blank">
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  ) : (
+                    <a href="https://www.google.com" target="_blank">
                       {nav.title}
                     </a>
-                  ) : (
-                    <a href={`${nav.id}`}>{nav.title}</a>
                   )}
                 </li>
               ))}
