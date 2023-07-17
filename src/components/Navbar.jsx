@@ -67,7 +67,7 @@ const Navbar = () => {
               {nav.id !== "Trade Now" ? (
                 <a href={`#${nav.id}`}>{nav.title}</a>
               ) : (
-                <a href="https://www.google.com" target="_blank">
+                <a href="https://trader.jettradefx.in/" target="_blank">
                   {nav.title}
                 </a>
               )}
