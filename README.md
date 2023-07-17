@@ -10,7 +10,7 @@ Contributing
 Contact
 # Getting Started
 To get started with thecentum-world--portfolio project, follow these steps:
-1. Clone the repository: git clone https://github.com/aniimessh/centum-world-main.git
+1. Clone the repository: git clone [https://github.com/aniimessh/centum-world-main.git](https://github.com/aniimessh/Centum-World-Final)
 2. Open the project in your favorite code editor.
 3. Review the project structure and familiarize yourself with the files and directories.
 # Features
