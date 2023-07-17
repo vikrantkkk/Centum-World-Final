@@ -22,7 +22,7 @@ const MapContainer = (props) => {
   return (
     <Map
       google={props.google}
-      zoom={14}
+      zoom={16}
       style={{ width: '100%', height: '100%' }}
       initialCenter={{
         lat: selectedLocation.lat,
