@@ -157,9 +157,7 @@ const Contact = () => {
               </Select>
             </div>
 
-            <div>
               <MapContainer location={location} />
-            </div>
           </div>
         </motion.div>
       </div>

@@ -27,6 +27,7 @@ export const Footer = () => {
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>
+                <a href="#contact">Trade Now</a>
               </div>
             </div>
           </div>
@@ -51,7 +52,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-black-100 text-center flex justify-center gap-x-2">
+      <div className=" bg-black-100 text-center flex justify-center sm:gap-x-2  gap-x-0 items-center sm:p-0 p-2">
         <p>&copy;</p>
         <p>copyright. All right reserved 2023</p>
       </div>
