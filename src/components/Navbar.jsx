@@ -44,7 +44,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' width={50} height={50} className='object-contain filter invert' />
           <p className='text-white font-bold cursor-pointer flex items-center '>
-            Jet Trade &nbsp;
+            Jet Trade
             <span className='sm:block hidden text-secondary'>FX</span>
           </p>
         </Link>
