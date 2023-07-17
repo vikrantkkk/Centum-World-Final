@@ -42,8 +42,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' width={50} height={50} className='object-contain filter invert' />
-          <p className='text-white font-bold cursor-pointer flex items-center '>
+          <img src={logo} alt='logo' width={65} height={65} className='object-contain filter invert' />
+          <p className='text-white font-bold cursor-pointer flex items-center text-xl '>
             Jet Trade
             <span className='sm:block hidden text-secondary'>FX</span>
           </p>
