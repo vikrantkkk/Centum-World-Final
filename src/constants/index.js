@@ -54,37 +54,37 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Research and Analysis",
+    title: "Research and Market Analysis",
     icon: web,
   },
   {
-    title: "Candlestick Pattern",
+    title: "Trading Execution",
     icon: mobile,
   },
   {
-    title: "Market Data",
+    title: "Charting Analysis Tools",
     icon: backend,
   },
   {
-    title: "AI Algorithmic Trading",
+    title: "Risk Management Features",
     icon: creator,
   },
-  {
-    title:"Chart Pattern",
-    icon: web,
-  },
-  {
-    title:"MT 4 Application",
-    icon: web,
-  },
-  {
-    title:"24/7 Support",
-    icon: web,
-  },
-  {
-    title:"User Friendly Platform",
-    icon: web,
-  },
+  // {
+  //   title:"Chart Pattern",
+  //   icon: web,
+  // },
+  // {
+  //   title:"MT 4 Application",
+  //   icon: web,
+  // },
+  // {
+  //   title:"24/7 Support",
+  //   icon: web,
+  // },
+  // {
+  //   title:"User Friendly Platform",
+  //   icon: web,
+  // },
 ];
 
 const technologies = [
@@ -144,20 +144,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "AUG'2021",
-    company_name: "",
-    // icon: starbucks,
-    iconBg: "#383E56",
-    points: [
-      "Establishment of Partnership Firm 'CENTUM WORLD' ",
-    ],
-  },
-  {
     title: "SEP' 2021",
     company_name: "Tesla",
     // icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "",
     points: [
       "CENTUM WORLD SaaS App key EcoSystem . 10+ Unique & Usefull Apps",
     ],
@@ -167,22 +158,62 @@ const experiences = [
     company_name: "Shopify",
     // icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "",
     points: [
       "Distribution Management EcoSystem {Knows as DMS}",
     ],
   },
   {
-    title: "title 4 ",
+    title: "OCT'21 TO JAN'2022 ",
     company_name: "Meta",
     // icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "",
     points: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Decentralized Peer to Peer BEP 20 Crypto Asset Known as 'CENTUMO' Token",
+    ],
+  },
+  {
+    title: "FEB'2022",
+    company_name: "Meta",
+    // icon: meta,
+    iconBg: "#383E56",
+    date: "",
+    points: [
+      "Begining of a New Era in Digital Crypto Asset. Launch of CENTUMO Token, Liquidity, Smart contracts & Listing on Pancake Swap, Binanace etc.",
+    ],
+  },
+  {
+    title: "Q1 2022",
+    company_name: "Meta",
+    // icon: meta,
+    iconBg: "#E6DEDD",
+    date: "",
+    points: [
+      "Research & Development on Self Blockchain Technology Platform, Mining & Mint Infrastructure",
+    ],
+  },
+  {
+    title: "Q2 2022",
+    company_name: "Meta",
+    // icon: meta,
+    iconBg: "#383E56",
+    date: "",
+    points: [
+      "Launch of New Digital Coin, Know as 'CENTUMO' Coin. Publish of Centumo Swap & Centumo Wallet",
+    ],
+  },
+  {
+    title: "2023-2024",
+    company_name: "Meta",
+    // icon: meta,
+    iconBg: "#E6DEDD",
+    date: "",
+    points: [
+      "Artificial Intelligence (AI) Technology",
+      "Robotics Engineering",
+      "Encryption Technology",
+      "More Advance Research & Development Platform"
     ],
   },
 ];

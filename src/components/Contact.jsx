@@ -47,8 +47,8 @@ const Contact = () => {
     // service_penm0se
     emailjs
       .send(
-        "service_za49s7k",
-        "template_4gl9eio",
+        // "service_za49s7k",service key
+        // "template_4gl9eio",  template key
         {
           from_name: form.name,
           to_name: "Jet Trade FX",
@@ -56,7 +56,7 @@ const Contact = () => {
           to_email: "enterYourMail@gmail.com",
           message: form.message,
         },
-        "ypleSUA3YKg2F36nq"
+        // "ypleSUA3YKg2F36nq"
       )
       .then(
         () => {
@@ -101,6 +101,7 @@ const Contact = () => {
                   name="name"
                   value={form.name}
                   onChange={handleChange}
+                  required
                   placeholder="Your Name"
                   className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                 />
@@ -113,6 +114,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Email address"
+                  required
                   className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                 />
               </label>
@@ -126,6 +128,7 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Your message"
+                  required
                   className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                 />
               </label>
@@ -151,19 +154,3 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
-
-          {/* <div className="map-container flex flex-col gap-y-5">
-            <h1 className="text-5xl font-extrabold">Our Company Location</h1>
-            <div>
-              <Select
-                defaultValue="Kolkata"
-                style={{ width: 120, marginBottom: 5 }}
-                onChange={chageLocation}
-              >
-                <Option value="Kolkata">Kolkata</Option>
-                <Option value="Bangalore">Banglore</Option>
-                <Option value="Jharkhand">Jharkhand</Option>
-              </Select>
-            </div>
-              <MapContainer location={location} />
-          </div> */}  

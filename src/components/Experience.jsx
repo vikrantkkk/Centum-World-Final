@@ -18,21 +18,23 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
-        borderRadius:"10px" 
+        borderRadius:"10px",
+        borderBottom:"1px solid white",
+        width:"46%"
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      // date={experience.date}
+      iconStyle={{ background: experience.iconBg, marginTop:'1%'}}
     >
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-2 list-disc ml-5 '>
         {experience.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            key={index}
+            className='text-white-100 text-[14px] pl-2 tracking-wider border-l border-r pr-2'
           >
             {point}
           </li>
