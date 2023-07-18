@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, logo } from "../assets";
+import {AiOutlineArrowRight} from "react-icons/ai";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -29,8 +30,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center sm:py-5 pb-[80%] fixed top-0 z-20 ${
+        scrolled ? "sm:bg-primary bg-transparent" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -67,8 +68,9 @@ const Navbar = () => {
               {nav.id !== "Trade Now" ? (
                 <a href={`#${nav.id}`}>{nav.title}</a>
               ) : (
-                <a href="https://trader.jettradefx.in/" target="_blank">
+                <a href="https://trader.jettradefx.in/" target="_blank" className="underline flex items-center gap-x-2">
                   {nav.title}
+                  <AiOutlineArrowRight/>
                 </a>
               )}
             </li>
@@ -86,7 +88,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (

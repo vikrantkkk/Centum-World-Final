@@ -52,7 +52,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Jet Trade FX",
           from_email: form.email,
-          to_email: "animeshsep01@gmail.com",
+          to_email: "enterYourMail@gmail.com",
           message: form.message,
         },
         "ypleSUA3YKg2F36nq"
@@ -156,7 +156,6 @@ const Contact = () => {
                 <Option value="Jharkhand">Jharkhand</Option>
               </Select>
             </div>
-
               <MapContainer location={location} />
           </div>
         </motion.div>

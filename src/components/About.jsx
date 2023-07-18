@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="xs:w-[210px] mx-5 my-5">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -54,7 +54,7 @@ const About = () => {
       </motion.p>
 
         <p className={`${styles.sectionSubText} mt-10`}>Services</p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className=" flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
