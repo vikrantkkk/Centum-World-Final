@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 shadow-2xl z-10`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 shadow-2xl z-10 overflow-y-hidden`}
       >
         <div className="z-40">
           <h1 className={`${styles.heroHeadText} text-[#915EFF]`}>
@@ -18,7 +18,7 @@ const Hero = () => {
             AI based smart trading apps
           </p>
         </div>
-        <div className="absolute h-[60%] w-[90%] sm:h-full sm:w-full top-[20%] sm:top-[5%]">
+        <div className="absolute h-[40%] w-[100%] sm:h-[60%] sm:w-[60%] top-[25%] sm:top-[20%] sm:right-[10%]">
           <EarthCanvas />
         </div>
       </div>
