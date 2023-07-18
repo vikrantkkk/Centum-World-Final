@@ -34,6 +34,7 @@ const Navbar = () => {
         scrolled ? "sm:bg-primary bg-transparent" : "bg-transparent"
       }`}
     >
+      <div className={`absolute sm:hidden block top-0 transition-all duration-200 w-full h-[25%] z-[-10] left-0 bg-primary ${scrolled ? "bg-primary": "bg-transparent"}`}></div>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
@@ -52,7 +53,7 @@ const Navbar = () => {
           />
           <p className="text-white font-bold cursor-pointer flex items-center text-2xl uppercase">
             Jet Trade
-            <span className="sm:block hidden text-secondary uppercase">FX</span>
+            <span className="text-secondary uppercase">FX</span>
           </p>
         </Link>
 
