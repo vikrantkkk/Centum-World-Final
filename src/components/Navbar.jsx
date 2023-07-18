@@ -52,8 +52,8 @@ const Navbar = () => {
             className="object-contain filter invert"
           />
           <p className="text-white font-bold cursor-pointer flex items-center text-2xl uppercase">
-            Jet Trade
-            <span className="text-secondary uppercase">FX</span>
+            JetTrade
+            <span className="text-secondary uppercase"> &nbsp; FX</span>
           </p>
         </Link>
 

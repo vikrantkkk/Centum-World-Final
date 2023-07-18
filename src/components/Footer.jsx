@@ -31,10 +31,10 @@ export const Footer = () => {
 
   return (
     <>
-      <div className="bg-black-100 h-46 md:flex items-center p-10 hidden">
-        <div className="h-full w-full flex items-center p-5 justify-between">
-          <div className="flex justify-between items-center">
-            <div className="border-r p-4 flex-col items-center">
+      <div className="bg-black-100 h-46 flex sm:flex-row flex-col items-center p-10">
+        <div className="h-full w-full flex sm:flex-row flex-col items-center p-5 justify-between">
+          <div className="flex sm:flex-row flex-col items-center sm:max-w-max w-full">
+            <div className="sm:border-r p-4 flex-col items-center justify-center ">
               <img
                 src={logo}
                 alt="logo"
@@ -45,7 +45,7 @@ export const Footer = () => {
               <p className="font-bold">JET TRADE FX</p>
             </div>
             <div className="p-4 flex flex-col gap-5">
-              <div className="flex gap-x-10 text-secondary">
+              <div className="flex sm:flex-row flex-col gap-x-10 text-secondary">
                 <a href="#">Home</a>
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
@@ -94,7 +94,7 @@ export const Footer = () => {
                 <FaTwitterSquare className="w-5 h-5" />
               </Link>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 w-[110%] flex items-center ">
               <p>Support: mail@gmail.com</p>
             </div>
           </div>
