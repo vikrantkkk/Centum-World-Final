@@ -56,21 +56,21 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-[#fff]" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               {nav.id !== "Trade Now" ? (
                 <a href={`#${nav.id}`}>{nav.title}</a>
               ) : (
-                <a href="https://trader.jettradefx.in/" target="_blank" className="underline flex items-center gap-x-2">
+                <a href="https://trader.jettradefx.in/" target="_blank" className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group">
                   {nav.title}
-                  <AiOutlineArrowRight/>
+                  <AiOutlineArrowRight className="group-hover:translate-x-1 transition-all duration-200"/>
                 </a>
               )}
             </li>

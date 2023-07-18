@@ -21,13 +21,17 @@ export const Footer = () => {
               />
               <p className="font-bold">JET TRADE FX</p>
             </div>
-            <div className="p-4">
+            <div className="p-4 flex flex-col gap-2">
               <div className="flex gap-x-10 text-secondary">
                 <a href="#">Home</a>
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>
                 <a href="#contact">Trade Now</a>
+              </div>
+              <div>
+                <p>Disclaimer: Trading are subject to market risk. Read all scheme related document carefully</p>
+                <p>Privacy Policy</p>
               </div>
             </div>
           </div>
