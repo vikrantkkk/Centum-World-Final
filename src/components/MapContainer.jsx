@@ -23,7 +23,7 @@ const MapContainer = (props) => {
     <Map
       google={props.google}
       zoom={16}
-      className="w-[100%] h-[100%]"
+      className="w-[100%]"
       initialCenter={{
         lat: selectedLocation.lat,
         lng: selectedLocation.lng

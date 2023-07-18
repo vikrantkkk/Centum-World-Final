@@ -141,7 +141,7 @@ const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden"
         >
           <div className="map-container flex flex-col gap-y-5">
             <h1 className="text-5xl font-extrabold">Our Company Location</h1>

@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex flex-col items-center"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -46,13 +46,13 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            width={65}
-            height={65}
+            width={40}
+            height={40}
             className="object-contain filter invert"
           />
-          <p className="text-white font-bold cursor-pointer flex items-center text-xl ">
+          <p className="text-white font-bold cursor-pointer flex items-center text-2xl uppercase">
             Jet Trade
-            <span className="sm:block hidden text-secondary">FX</span>
+            <span className="sm:block hidden text-secondary uppercase">FX</span>
           </p>
         </Link>
 
