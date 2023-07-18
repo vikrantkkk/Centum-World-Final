@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center sm:py-5 pb-[80%] fixed top-0 z-20 ${
+      } w-full flex items-center sm:py-2 pb-[80%] fixed top-0 z-20 ${
         scrolled ? "sm:bg-primary bg-transparent" : "bg-transparent"
       }`}
     >
@@ -46,9 +46,9 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            width={40}
-            height={40}
-            className="object-contain filter invert"
+            width={60}
+            height={60}
+            className="object-contain filter invert border"
           />
           <p className="text-white font-bold cursor-pointer flex items-center text-2xl uppercase">
             Jet Trade

@@ -8,6 +8,7 @@ import { slideIn } from "../utils/motion";
 import MapContainer from "./MapContainer";
 import { VscSend } from "react-icons/vsc";
 const { Option } = Select;
+import ContactGif from "../assets/contact2.png"
 
 const Contact = () => {
   const formRef = useRef();
@@ -138,12 +139,20 @@ const Contact = () => {
               </button>
             </form>
         </motion.div>
-
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden"
         >
-          <div className="map-container flex flex-col gap-y-5">
+            <img src={ContactGif} alt="" className="w-full filter:"/>
+        </motion.div>
+      </div>
+    </>
+  );
+};
+
+export default SectionWrapper(Contact, "contact");
+
+          {/* <div className="map-container flex flex-col gap-y-5">
             <h1 className="text-5xl font-extrabold">Our Company Location</h1>
             <div>
               <Select
@@ -157,11 +166,4 @@ const Contact = () => {
               </Select>
             </div>
               <MapContainer location={location} />
-          </div>
-        </motion.div>
-      </div>
-    </>
-  );
-};
-
-export default SectionWrapper(Contact, "contact");
+          </div> */}  

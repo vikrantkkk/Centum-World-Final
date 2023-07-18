@@ -12,13 +12,13 @@ const Hero = () => {
             Welcome to{" "}
             <span className="text-white uppercase"> Jet Trade FX</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-10 text-white-100 z-40`}>
-            Advance & smart forex trading platform{" "}
+          <p className={`${styles.heroSubText} mt-36 text-white-100 z-40`}>
+            Advance Forex trading platform{" "}
             <br className="sm:block hidden" />
             AI based smart trading apps
           </p>
         </div>
-        <div className="absolute h-[40%] w-[100%] sm:h-[60%] sm:w-[60%] top-[25%] sm:top-[20%] sm:right-[10%]">
+        <div className="absolute h-[40%] w-[100%] sm:h-[60%] sm:w-[60%] mt- top-[25%] sm:top-[20%] sm:right-[10%]">
           <EarthCanvas />
         </div>
       </div>
