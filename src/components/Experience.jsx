@@ -20,7 +20,7 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
         borderRadius:"10px",
         borderBottom:"1px solid white",
-        width:"46%"
+        // width:"46%"
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       // date={experience.date}
@@ -30,7 +30,7 @@ const ExperienceCard = ({ experience }) => {
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
       </div>
 
-      <ul className='mt-2 list-disc ml-5 '>
+      <ul className='mt-2 list-disc ml-5 w-full '>
         {experience.points.map((point, index) => (
           <li
             key={index}
