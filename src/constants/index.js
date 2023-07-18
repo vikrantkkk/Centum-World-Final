@@ -25,6 +25,10 @@ import {
   threejs,
 } from "../assets";
 
+import project1 from "../assets/projects/project1.jpg"
+import project2 from "../assets/projects/project2.jpg"
+import project3 from "../assets/projects/project3.jpg"
+
 export const navLinks = [
   {
     id:"",
@@ -50,20 +54,36 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Trading Platform",
+    title: "Research and Analysis",
     icon: web,
   },
   {
-    title: "Market Analysis and Research",
+    title: "Candlestick Pattern",
     icon: mobile,
   },
   {
-    title: "Education and Training",
+    title: "Market Data",
     icon: backend,
   },
   {
-    title: "Account Management and Support",
+    title: "AI Algorithmic Trading",
     icon: creator,
+  },
+  {
+    title:"Chart Pattern",
+    icon: web,
+  },
+  {
+    title:"MT 4 Application",
+    icon: web,
+  },
+  {
+    title:"24/7 Support",
+    icon: web,
+  },
+  {
+    title:"User Friendly Platform",
+    icon: web,
   },
 ];
 
@@ -124,42 +144,32 @@ const technologies = [
 
 const experiences = [
   {
-    title: "title 1",
-    company_name: "Starbucks",
+    title: "AUG'2021",
+    company_name: "",
     // icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
     points: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Establishment of Partnership Firm 'CENTUM WORLD' ",
     ],
   },
   {
-    title: "title 2",
+    title: "SEP' 2021",
     company_name: "Tesla",
     // icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "CENTUM WORLD SaaS App key EcoSystem . 10+ Unique & Usefull Apps",
     ],
   },
   {
-    title: "title 3",
+    title: "OCT'2021",
     company_name: "Shopify",
     // icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Distribution Management EcoSystem {Knows as DMS}",
     ],
   },
   {
@@ -206,9 +216,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Dummy Project",
+    name: "Security & Privacy",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "User Friendly Authentication",
     tags: [
       {
         name: "react",
@@ -223,13 +233,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: project1,
   },
   {
-    name: "Dummy Project",
+    name: "Advance Web/Mobile Apps",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Smart Infotainment app for all",
     tags: [
       {
         name: "react",
@@ -244,13 +253,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: project2,
   },
   {
-    name: "Dummy Project",
+    name: "Buy Sell Exchange Token/Coin",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Go Faster with our CENTUMO Token EcoSystem",
     tags: [
       {
         name: "nextjs",
@@ -265,8 +273,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: project3,
   },
 ];
 

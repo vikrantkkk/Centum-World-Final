@@ -48,7 +48,7 @@ const Navbar = () => {
             alt="logo"
             width={60}
             height={60}
-            className="object-contain filter invert border"
+            className="object-contain filter invert"
           />
           <p className="text-white font-bold cursor-pointer flex items-center text-2xl uppercase">
             Jet Trade

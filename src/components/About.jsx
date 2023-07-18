@@ -44,16 +44,25 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet quidem
-        iure cumque, voluptatem illo architecto quas dolores magni voluptatum
-        consequuntur corporis a deserunt. Omnis, consequuntur sequi. Rerum
-        laborum alias odio quibusdam ipsam distinctio illum aspernatur, debitis
-        animi voluptatem dolorum.
+        Jet tradefx is a trading platform where you learn about the forex
+        trading , market price execution ,instant execution or pending orders as
+        per your convenience. You need to invest money in the jettrade fx and it
+        will trade and make profit for you. Jettrade fx provides a paid and
+        unpaid software version.In which the customer will choose one of them
+        which he needs. Paid version – In the paid version the customer firstly
+        login the page and pay the software usage charge plan of rupees 3500 for
+        a month at the time of deposit.
+        Unpaid version – In the unpaid version the customer needs to pay
+        according to his will and desire . Every plans for the software usage
+        charge will be same .If the customer wants to pay the plan then he may
+        get the benefit of the paid version but he is supposed to sign up for
+        the first time as a new member,merely then he is able to take the
+        advantage of it.
       </motion.p>
 
-        <p className={`${styles.sectionSubText} mt-10`}>Services</p>
+      <p className={`${styles.sectionSubText} mt-10`}>Services</p>
       <div className=" flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />

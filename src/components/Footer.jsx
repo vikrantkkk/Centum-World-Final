@@ -4,8 +4,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {logo } from "../assets";
+import { Select } from "antd";
+const {Option} = Select
 
 export const Footer = () => {
+  const [address, setAddress] = useState("Kolkata");
+  const changeLocation = (value) => {
+    setAddress(value)
+  }
   return (
     <>
       <div className="bg-black-100 h-46 md:flex items-center p-10 hidden">
@@ -21,7 +27,7 @@ export const Footer = () => {
               />
               <p className="font-bold">JET TRADE FX</p>
             </div>
-            <div className="p-4 flex flex-col gap-2">
+            <div className="p-4 flex flex-col gap-5">
               <div className="flex gap-x-10 text-secondary">
                 <a href="#">Home</a>
                 <a href="#about">About</a>
@@ -29,10 +35,22 @@ export const Footer = () => {
                 <a href="#contact">Contact</a>
                 <a href="#contact">Trade Now</a>
               </div>
+              <div className="address flex flex-col">
+              <Select
+                defaultValue="Kolkata"
+                style={{ width: 120, marginBottom: 5 }}
+                onChange={changeLocation}
+              >
+                <Option value="Kolkata">Kolkata</Option>
+                <Option value="Bangalore">Banglore</Option>
+                <Option value="Jharkhand">Jharkhand</Option>
+              </Select>
               <div>
-                <p>Disclaimer: Trading are subject to market risk. Read all scheme related document carefully</p>
-                <p>Privacy Policy</p>
+              {address === 'Kolkata'?'Astra Towers, Action Area IIC, Newtown, New Town, West Bengal 700135':''}
+              {address === 'Bangalore'? '108,27th Main,HSR Layout,Sector-2,Bangalore,KA 560102, India':''}
+              {address === 'Jharkhand'? 'Jet Trade FX SOY MARKET, TAMBO CHOWK, CHAIBASA (JHARKHAND 833201)':''}
               </div>
+            </div>
             </div>
           </div>
           <div className="flex-col gap-x-5">
@@ -56,9 +74,9 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-black-100 text-center flex justify-center sm:gap-x-2  gap-x-0 items-center sm:p-0 p-2">
-        <p>&copy;</p>
-        <p>copyright. All right reserved 2023</p>
+      <div className=" bg-black-100 text-center flex justify-center sm:gap-x-2  gap-x-0 items-center sm:p-0 p-2 flex-col">
+        <p>&copy; copyright. All right reserved 2023</p>
+        <p>Disclaimer: Trading are subject to market risk. Read all scheme related document carefully</p>
       </div>
     </>
   );
