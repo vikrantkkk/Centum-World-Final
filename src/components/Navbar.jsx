@@ -69,7 +69,7 @@ const Navbar = () => {
               {nav.id !== "Trade Now" ? (
                 <a href={`#${nav.id}`}>{nav.title}</a>
               ) : (
-                <a href="https://trader.jettradefx.in/" target="_blank" className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group">
+                <a href="http://trader.jettradefx.in/" target="_blank" className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group">
                   {nav.title}
                   <AiOutlineArrowRight className="group-hover:translate-x-1 transition-all duration-200"/>
                 </a>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   {nav.id !== "Trade Now" ? (
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   ) : (
-                    <a href="https://trader.jettradefx.in/" target="_blank">
+                    <a href="http://trader.jettradefx.in/" target="_blank">
                       {nav.title}
                     </a>
                   )}
