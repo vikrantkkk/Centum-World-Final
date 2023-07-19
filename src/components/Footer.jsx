@@ -109,10 +109,11 @@ export const Footer = () => {
       </div>
       <Modal
         title="Privacy and Policy"
+        className="w-[100vw] sm:w-[50vw]"
         visible={visibleModal}
         onCancel={handleCancel}
         closable={true}
-        width={"50vw"}
+        // width={"50vw"}
         height={"100vh"}
       >
         <div className="flex flex-col gap-y-5 text-justify z-40">
