@@ -25,14 +25,14 @@ import {
   threejs,
 } from "../assets";
 
-import project1 from "../assets/projects/project1.jpg"
-import project2 from "../assets/projects/project2.jpg"
-import project3 from "../assets/projects/project3.jpg"
+import project1 from "../assets/projects/project1.jpg";
+import project2 from "../assets/projects/project2.jpg";
+import project3 from "../assets/projects/project3.jpg";
 
 export const navLinks = [
   {
-    id:"",
-    title:"Home"
+    id: "",
+    title: "Home",
   },
   {
     id: "about",
@@ -47,12 +47,28 @@ export const navLinks = [
     title: "Contact",
   },
   {
-    id:"Trade Now",
-    title:"Trade Now",
-  }
+    id: "members",
+    title: "White Paper",
+  },
+  {
+    id: "Trade Now",
+    title: "Trade Now",
+  },
 ];
 
 const services = [
+  {
+    title:"Advance AI Algrithm",
+    icon: web,
+  },
+  {
+    title:"Quicker Safer With 80% Accuracy",
+    icon: web,
+  },
+  {
+    title:"Expert Team with 24/7 Support",
+    icon: web,
+  },
   {
     title: "Research and Market Analysis",
     icon: web,
@@ -69,18 +85,6 @@ const services = [
     title: "Risk Management Features",
     icon: creator,
   },
-  // {
-  //   title:"Chart Pattern",
-  //   icon: web,
-  // },
-  // {
-  //   title:"MT 4 Application",
-  //   icon: web,
-  // },
-  // {
-  //   title:"24/7 Support",
-  //   icon: web,
-  // },
   // {
   //   title:"User Friendly Platform",
   //   icon: web,
@@ -149,9 +153,7 @@ const experiences = [
     // icon: tesla,
     iconBg: "#E6DEDD",
     date: "",
-    points: [
-      "CENTUM WORLD SaaS App key EcoSystem . 10+ Unique & Usefull Apps",
-    ],
+    points: ["CENTUM WORLD SaaS App key EcoSystem . 10+ Unique & Usefull AI Apps"],
   },
   {
     title: "OCT'2021",
@@ -159,9 +161,7 @@ const experiences = [
     // icon: shopify,
     iconBg: "#383E56",
     date: "",
-    points: [
-      "Distribution Management EcoSystem {Knows as DMS}",
-    ],
+    points: ["Distribution Management EcoSystem (Knows as DMS)"],
   },
   {
     title: "OCT'21 TO JAN'2022 ",
@@ -184,7 +184,7 @@ const experiences = [
     ],
   },
   {
-    title: "Q1 2022",
+    title: "Q1-Q3 2022",
     company_name: "Meta",
     // icon: meta,
     iconBg: "#E6DEDD",
@@ -194,13 +194,13 @@ const experiences = [
     ],
   },
   {
-    title: "Q2 2022",
+    title: "Q4 2022",
     company_name: "Meta",
     // icon: meta,
     iconBg: "#383E56",
     date: "",
     points: [
-      "Launch of New Digital Coin, Know as 'CENTUMO' Coin. Publish of Centumo Swap & Centumo Wallet",
+      "Launch of New Service, Know as 'SaaS'",
     ],
   },
   {
@@ -210,10 +210,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "",
     points: [
-      "Artificial Intelligence (AI) Technology",
-      "Robotics Engineering",
-      "Encryption Technology",
-      "More Advance Research & Development Platform"
+      "Launching of JetTrade FX, NFT"
     ],
   },
 ];
@@ -248,8 +245,7 @@ const testimonials = [
 const projects = [
   {
     name: "Security & Privacy",
-    description:
-      "User Friendly Authentication",
+    description: "User Friendly Authentication",
     tags: [
       {
         name: "react",
@@ -268,8 +264,7 @@ const projects = [
   },
   {
     name: "Advance Web/Mobile Apps",
-    description:
-      "Smart Infotainment app for all",
+    description: "Smart Infotainment app for all",
     tags: [
       {
         name: "react",
@@ -288,8 +283,7 @@ const projects = [
   },
   {
     name: "Buy Sell Exchange Token/Coin",
-    description:
-      "Go Faster with our CENTUMO Token EcoSystem",
+    description: "Go Faster with our CENTUMO Token EcoSystem",
     tags: [
       {
         name: "nextjs",

@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas } from "./components";
 import { Footer } from "./components/Footer";
+import AccordionItem from "./components/Accordion";
 
 const App = () => {
   return (
@@ -14,7 +15,10 @@ const App = () => {
         <About />
         <Experience />
         <Works />
+        <div id="members">
         <Feedbacks />
+        </div>
+        <AccordionItem/>
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

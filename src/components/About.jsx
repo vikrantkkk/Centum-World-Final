@@ -46,23 +46,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
       >
-        Jet tradefx is a trading platform where you learn about the forex
-        trading , market price execution ,instant execution or pending orders as
-        per your convenience. You need to invest money in the jettrade fx and it
-        will trade and make profit for you. Jettrade fx provides a paid and
-        unpaid software version.In which the customer will choose one of them
-        which he needs. Paid version – In the paid version the customer firstly
-        login the page and pay the software usage charge plan of rupees 3500 for
-        a month at the time of deposit. Unpaid version – In the unpaid version
-        the customer needs to pay according to his will and desire . Every plans
-        for the software usage charge will be same .If the customer wants to pay
-        the plan then he may get the benefit of the paid version but he is
-        supposed to sign up for the first time as a new member,merely then he is
-        able to take the advantage of it.
+        JETTRADE FX is a user-friendly and reliable trading platform that caters to traders of all levels. It offers a wide range of trading instruments, including major and minor currency pairs, commodities, indices, and cryptocurrencies. The platform provides DEMO and REAL accounts with unique features such as minimum deposit requirements, leverage options, and spreads. It supports popular trading platforms like JTF and MetaTrader (MT4) with advanced charting tools and expert advisors to enhance efficiency. Customer support is prompt and accessible via email, live chat, and phone. Multiple deposit and withdrawal options, including bank transfers and online methods, ensure convenience for traders worldwide. Overall, JETTRADE FX provides a comprehensive trading environment with user-friendliness and exceptional support.
       </motion.p>
 
       <p className={`${styles.sectionSubText} mt-10`}>Services</p>
-      <div className=" flex flex-wrap gap-10">
+      <div className=" flex flex-wrap gap-10 justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
