@@ -53,13 +53,12 @@ const About = () => {
         unpaid software version.In which the customer will choose one of them
         which he needs. Paid version – In the paid version the customer firstly
         login the page and pay the software usage charge plan of rupees 3500 for
-        a month at the time of deposit.
-        Unpaid version – In the unpaid version the customer needs to pay
-        according to his will and desire . Every plans for the software usage
-        charge will be same .If the customer wants to pay the plan then he may
-        get the benefit of the paid version but he is supposed to sign up for
-        the first time as a new member,merely then he is able to take the
-        advantage of it.
+        a month at the time of deposit. Unpaid version – In the unpaid version
+        the customer needs to pay according to his will and desire . Every plans
+        for the software usage charge will be same .If the customer wants to pay
+        the plan then he may get the benefit of the paid version but he is
+        supposed to sign up for the first time as a new member,merely then he is
+        able to take the advantage of it.
       </motion.p>
 
       <p className={`${styles.sectionSubText} mt-10`}>Services</p>
