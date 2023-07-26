@@ -51,6 +51,7 @@ export const Footer = () => {
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>
                 <a href="#contact">Trade Now</a>
+                <a href="#faq">FAQ</a>
                 <p onClick={showModal} className="cursor-pointer">
                   Privacy & Policy
                 </p>

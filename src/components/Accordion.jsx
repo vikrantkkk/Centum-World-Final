@@ -41,12 +41,47 @@ function App() {
   return (
     <div className=" ">
       <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <h2 className={`${styles.sectionHeadText} text-right`}>Frequenlty Asked Question(FAQ.)</h2>
+        <h2 className={`${styles.sectionHeadText} text-right`}>
+          Frequenlty Asked Question(FAQ.)
+        </h2>
         <div className="space-y-8">
           {/* Add more questions and answers as needed */}
-          <AccordionItem question="Question 1" answer="Answer 1" />
-          <AccordionItem question="Question 2" answer="Answer 2" />
-          {/* Add more questions and answers as needed */}
+          <AccordionItem
+            question="What is JETTRADE FX?"
+            answer="JETTRADE FX  is a  trading platform that allows users to trade various financial instruments, including currency pairs, indices, commodities, and cryptocurrencies."
+          />
+          <AccordionItem
+            question="How can I open an account with JETTRADE FX?"
+            answer="To open an account with JETTRADE FX                       
+         You need to visit website,
+         Click on the 'Trade Now or Sign Up' button 
+         Fill out registration form.
+         You'll require to provide some personal information and verify your identity before you can start trading."
+          />
+          <AccordionItem
+            question="What trading platforms does JETTRADE FX offer? "
+            answer="ETTRADE FX  states  significant way to  access to the trading platforms such as  JETTRADE FX (JTF). This platform has robust features and  getting benefits  with the enhanced AI(Artificial Intelligence ) technologies and user-friendly interfaces."
+          />
+          <AccordionItem
+            question="What is the minimum deposit required to start trading on JETTRADE FX?"
+            answer="The minimum deposit amount  is required  3,500 rupees  to start trading on JETTRADE FX."
+          />
+          <AccordionItem
+            question="What financial instruments can I trade on JETTRADE FX?"
+            answer="JETTRADE FX offers a range of tradable assets, including major and minor currency pairs  and cryptocurrencies."
+          />
+          <AccordionItem
+            question="What are the trading hours on JETTRADE FX?"
+            answer="The trading hours depend on the specific market you're interested in trading. Forex markets are typically open 24 hours a day from Monday to Friday, while other markets have specific trading sessions."
+          />
+          <AccordionItem
+            question="What are the available payment methods for deposits and withdrawals?"
+            answer="JETTRADE FX usually supports various payment methods, such as bank transfers, credit/debit cards, and online payment systems like Skrill and Neteller."
+          />
+          <AccordionItem
+            question="Is JETTRADE FX regulated?"
+            answer="JETTRADE FX claims to be a regulated broker. You should check the  website or contact the support team to confirm the regulatory status."
+          />
         </div>
       </div>
     </div>

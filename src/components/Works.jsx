@@ -23,13 +23,13 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[310px] mx-5 my-5 h-[90%] flex flex-col justify-between "
+        className="bg-tertiary p-5 rounded-2xl sm:w-[310px] mx-5 my-5 h-[90%]  flex flex-col justify-between "
       >
-        <div className="relative">
+        <div className="relative h-full">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full flex-1 object-cover rounded-2xl"
+            className="w-full h-[80%] flex-1 object-cover rounded-2xl"
           />
         </div>
 

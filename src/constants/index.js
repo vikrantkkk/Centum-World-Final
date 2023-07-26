@@ -244,8 +244,8 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Security & Privacy",
-    description: "User Friendly Authentication",
+    name: "Centum SaaS App Key",
+    description: "User Friendly AI Apps",
     tags: [
       {
         name: "react",
@@ -263,8 +263,8 @@ const projects = [
     image: project1,
   },
   {
-    name: "Advance Web/Mobile Apps",
-    description: "Smart Infotainment app for all",
+    name: "Centum Token",
+    description: "",
     tags: [
       {
         name: "react",
@@ -282,8 +282,8 @@ const projects = [
     image: project2,
   },
   {
-    name: "Buy Sell Exchange Token/Coin",
-    description: "Go Faster with our CENTUMO Token EcoSystem",
+    name: "Centum Blockchain",
+    description: "",
     tags: [
       {
         name: "nextjs",
