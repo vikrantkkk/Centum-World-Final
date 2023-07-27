@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  manage,
+  software
 } from "../assets";
 
 import project1 from "../assets/projects/project1.jpg";
@@ -59,15 +61,15 @@ export const navLinks = [
 const services = [
   {
     title:"Advance AI Algorithm",
-    icon: web,
+    icon: manage,
   },
   {
     title:"Quicker Safer With 80% Accuracy",
-    icon: web,
+    icon: software,
   },
   {
     title:"Expert Team with 24/7 Support",
-    icon: web,
+    icon: creator,
   },
   {
     title: "Research and Market Analysis",
@@ -81,10 +83,10 @@ const services = [
     title: "Charting Analysis Tools",
     icon: backend,
   },
-  {
-    title: "Risk Management Features",
-    icon: creator,
-  },
+  // {
+  //   title: "Risk Management Features",
+  //   icon: creator,
+  // },
   // {
   //   title:"User Friendly Platform",
   //   icon: web,

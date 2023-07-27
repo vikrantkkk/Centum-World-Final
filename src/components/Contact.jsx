@@ -142,12 +142,12 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden md:block hidden"
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden md:block hidden "
         >
           <img
             src={ContactGif}
             alt=""
-            className="sm:w-full h-full sm:h-auto w-auto p-10 filter:"
+            className="sm:w-full h-full sm:h-auto w-auto p-10 animate-pulse mt-14"
           />
         </motion.div>
       </div>

@@ -207,3 +207,12 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+@keyframes animate-x-axis {
+  0%, 100% {
+    transform: translateX(0); /* Start and end position - no translation */
+  }
+  50% {
+    transform: translateX(20px); /* Middle position - translate 20 pixels to the right */
+  }
+}
