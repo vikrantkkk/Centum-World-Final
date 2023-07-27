@@ -5,7 +5,7 @@ function AccordionItem({ question, answer }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 max-h-max">
       <button
         onClick={() => setOpen(!open)}
         className="w-full bg-tertiary flex items-center justify-between rounded-md px-4 py-2 text-lg font-medium text-left "
@@ -39,8 +39,8 @@ function AccordionItem({ question, answer }) {
 
 function App() {
   return (
-    <div className=" ">
-      <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="" id="faq">
+      <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <h2 className={`${styles.sectionHeadText} text-right`}>
           Frequenlty Asked Question(FAQ.)
         </h2>
@@ -52,7 +52,7 @@ function App() {
           />
           <AccordionItem
             question="How can I open an account with JETTRADE FX?"
-            answer="To open an account with JETTRADE FX                       
+            answer="To open an account with JETTRADE FX
          You need to visit website,
          Click on the 'Trade Now or Sign Up' button 
          Fill out registration form.

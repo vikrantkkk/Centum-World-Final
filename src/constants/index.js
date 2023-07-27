@@ -58,7 +58,7 @@ export const navLinks = [
 
 const services = [
   {
-    title:"Advance AI Algrithm",
+    title:"Advance AI Algorithm",
     icon: web,
   },
   {

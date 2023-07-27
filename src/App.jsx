@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas } from "./components";
 import { Footer } from "./components/Footer";
 import AccordionItem from "./components/Accordion";
+import Video from "./components/Video";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Video/>
         <Experience />
         <Works />
         <div id="members">
