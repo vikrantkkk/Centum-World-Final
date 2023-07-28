@@ -242,7 +242,94 @@ const testimonials = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Name",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Name",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Name",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
 ];
+
+const testimonials2 = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Name",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://i.postimg.cc/1tNzDJPb/Whats-App-Image-2023-07-28-at-11-10-15.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Name",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://i.postimg.cc/7ZfrCbqW/Whats-App-Image-2023-07-28-at-11-10-14.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Name",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://i.postimg.cc/cC0N6mJR/Whats-App-Image-2023-07-28-at-11-10-14-1.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Name",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://i.postimg.cc/cC0N6mJR/Whats-App-Image-2023-07-28-at-11-10-14-1.jpg",
+  },
+  
+]
+
+const techTeam = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Tech Member 1",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://i.postimg.cc/1tNzDJPb/Whats-App-Image-2023-07-28-at-11-10-15.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Tech Member 2",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://i.postimg.cc/7ZfrCbqW/Whats-App-Image-2023-07-28-at-11-10-14.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Tech Member 3",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://i.postimg.cc/cC0N6mJR/Whats-App-Image-2023-07-28-at-11-10-14-1.jpg",
+  },
+]
 
 const projects = [
   {
@@ -304,4 +391,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, testimonials2, techTeam };

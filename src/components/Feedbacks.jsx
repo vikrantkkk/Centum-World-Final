@@ -1,29 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const FeedbackCard = ({
-  index,
-  testimonial,
-  name,
-  designation,
-  company,
-  image,
-}) => (
+// Import Swiper styles
+import "swiper/css/bundle";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+
+const FeedbackCard = ({ index, name, designation, company, image }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+    className="bg-black-200 p-10 my-10 rounded-3xl max-w-max"
   >
-    <p className="text-white font-black text-[48px]">"</p>
-
-    <div className="mt-1">
-      <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
-
-      <div className="mt-7 flex justify-between items-center gap-1">
+    <div className="flex justify-center items-center">
+      <div className="mt-7 flex flex-col-reverse items-center gap-2">
         <div className="flex-1 flex flex-col">
           <p className="text-white font-medium text-[16px]">
             <span className="blue-text-gradient">@</span> {name}
@@ -36,7 +34,7 @@ const FeedbackCard = ({
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
+          className="rounded-full object-cover"
         />
       </div>
     </div>
@@ -44,22 +42,43 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  const [swiperRef, setSwiperRef] = useState(null);
+
   return (
+    <>
+    <h2 className={`{${styles.sectionHeadText}}`}>Team Members.</h2>
     <div className={`bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Our Team</p>
-          <h2 className={styles.sectionHeadText}>Team Members.</h2>
+          <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
+            Management Ecosytem...
+          </p>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
+      <Swiper
+        onSwiper={setSwiperRef}
+        slidesPerView={6}
+        spaceBetween={30}
+        centeredSlides={true}
+        navigation={true}
+        modules={[Navigation]}
+      >
+        <div className={`-mt-20 pb-14 ${styles.paddingX}`}>
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide>
+              <FeedbackCard
+                key={testimonial.name}
+                index={index}
+                {...testimonial}
+              />
+            </SwiperSlide>
+          ))}
+        </div>
+      </Swiper>
     </div>
+    </>
   );
 };
 
