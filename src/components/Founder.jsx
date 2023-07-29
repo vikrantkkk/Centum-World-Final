@@ -9,9 +9,6 @@ import { testimonials } from "../constants";
 const FeedbackCard = ({ index, name, designation, company, image }) => (
   <div className="flex-shrink-0 min-w-[320px] max-w-max">
     <motion.div
-      drag // Enable dragging for the element
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} // Limit dragging within the container
-      dragElastic={0.8}
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
       className="bg-black-200 p-10 rounded-3xl max-w-max"
     >
@@ -42,23 +39,17 @@ const Feedbacks = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText}`}>Team Members.</h2>
-      </motion.div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div
-          className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[250px]`}
+          className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}
         >
           <motion.div variants={textVariant()}>
-            <p className={`${styles.heroSubText}`}>&lt; &gt; </p>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-              Management Ecosytem...
+             Founder...
             </p>
           </motion.div>
         </div>
-        <div
-          className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto`}
-        >
+        <div className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto`}>
           {testimonials.map((testimonial, index) => (
             <FeedbackCard
               key={testimonial.name}

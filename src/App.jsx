@@ -4,6 +4,8 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas
 import { Footer } from "./components/Footer";
 import AccordionItem from "./components/Accordion";
 import Video from "./components/Video";
+import TechTeam from "./components/TechTeam";
+import Founder from "./components/Founder";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Works />
         <div id="members">
         <Feedbacks />
+        <TechTeam />
+        <Founder />
         </div>
         <AccordionItem/>
         <div className='relative z-0'>
