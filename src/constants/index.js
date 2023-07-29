@@ -340,7 +340,7 @@ const techTeam = [
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Vikrant Kumar",
-    designation: "Project Manager",
+    designation: "Software Developer",
     company: "Centum World",
     image: vikrantAvatar,
   },
