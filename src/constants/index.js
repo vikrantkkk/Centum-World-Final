@@ -30,6 +30,25 @@ import {
 import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/project2.jpg";
 import project3 from "../assets/projects/project3.jpg";
+import badalAvatar from "../assets/badal_TechTeam.png"
+import vikrantAvatar from "../assets/vikrant.png"
+import prashantAvatar from "../assets/prashant.png"
+import lakhan from "../assets/lakhan.png"
+import animesh from "../assets/animesh.png"
+import yogendra from "../assets/yogendra.png"
+import sanjay from "../assets/sanjay.png"
+import gangaram from "../assets/gangaram.png"
+import sunrendra from "../assets/surendra.png"
+import ajay from "../assets/ajay.png"
+import hemant from "../assets/hemant.png"
+import sanjay2 from "../assets/sanjay2..png"
+import sushil from "../assets/sushil.png"
+import pariya from "../assets/pariya.png"
+import pacharia from "../assets/pacharia.png"
+import raju from "../assets/raju.jpeg"
+import founder from "../assets/founder.jpeg"
+import cofounder from "../assets/coFounder.jpeg"
+import hrAvatar from "../assets/HR.jpeg"
 
 export const navLinks = [
   {
@@ -221,113 +240,161 @@ const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Name",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Yogendra",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: yogendra,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Name",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Sanjay",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: sanjay,
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Name",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Gangaram",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: gangaram,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Name",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Surendra",
+    designation: "Marketing and Bussiness Development",
+    company:" Centum World",
+    image: sunrendra,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Name",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Ajay",
+    designation: "Marketing and Bussiness Development",
+    company: " Centum World",
+    image: ajay,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Name",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Hemant",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: hemant,
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Sanjay 2",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: sanjay2,
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Sushil",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: sushil,
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "A. Pariya",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: pariya,
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "N. Pacharia",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: pacharia,
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Raju Balmuchu",
+    designation: "Marketing and Bussiness Development",
+    company: "Centum World",
+    image: raju,
   },
 ];
-
-const testimonials2 = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Name",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://i.postimg.cc/1tNzDJPb/Whats-App-Image-2023-07-28-at-11-10-15.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Name",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://i.postimg.cc/7ZfrCbqW/Whats-App-Image-2023-07-28-at-11-10-14.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Name",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://i.postimg.cc/cC0N6mJR/Whats-App-Image-2023-07-28-at-11-10-14-1.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Name",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://i.postimg.cc/cC0N6mJR/Whats-App-Image-2023-07-28-at-11-10-14-1.jpg",
-  },
-  
-]
 
 const techTeam = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Tech Member 1",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://i.postimg.cc/1tNzDJPb/Whats-App-Image-2023-07-28-at-11-10-15.jpg",
+    name: "Badal Mandal",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: badalAvatar,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Tech Member 2",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://i.postimg.cc/7ZfrCbqW/Whats-App-Image-2023-07-28-at-11-10-14.jpg",
+    name: "Vikrant Kumar",
+    designation: "Project Manager",
+    company: "Centum World",
+    image: vikrantAvatar,
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Tech Member 3",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://i.postimg.cc/cC0N6mJR/Whats-App-Image-2023-07-28-at-11-10-14-1.jpg",
+    name: "Prashant Kumar",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: prashantAvatar,
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lakhan Mahto",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: lakhan,
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Animesh Gupta",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: animesh,
+  },
+  
+]
+
+const founders = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "J. Bose",
+    designation: "Founder, CEO",
+    company: "Centum World",
+    image: founder,
+  },
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "A. Das",
+    designation: "GM, HR",
+    company: "Centum World",
+    image: hrAvatar,
+  },
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "J. Barik",
+    designation: "Founder, CMO",
+    company: "Centum World",
+    image: cofounder,
   },
 ]
 
@@ -391,4 +458,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, testimonials2, techTeam };
+export { services, technologies, experiences, testimonials, projects, techTeam, founders };

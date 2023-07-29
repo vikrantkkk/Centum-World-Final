@@ -13,7 +13,7 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
       dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} // Limit dragging within the container
       dragElastic={0.8}
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="bg-black-200 p-10 rounded-3xl max-w-max"
+      className="bg-black-200 p-10 rounded-3xl w-[270px]"
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
@@ -29,7 +29,7 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
           <img
             src={image}
             alt={`feedback_by-${name}`}
-            className="rounded-full object-cover"
+            className="rounded-full object-cover h-28 w-28"
           />
         </div>
       </div>

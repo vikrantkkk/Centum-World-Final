@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+import { techTeam } from "../constants";
 
 const FeedbackCard = ({ index, name, designation, company, image }) => (
   <div className="flex-shrink-0 min-w-[320px] max-w-max">
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="bg-black-200 p-10 rounded-3xl max-w-max"
+      className="bg-black-200 p-10 rounded-3xl w-[270px]"
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
@@ -26,7 +26,7 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
           <img
             src={image}
             alt={`feedback_by-${name}`}
-            className="rounded-full object-cover"
+            className="rounded-full object-cover h-28 w-28"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ const Feedbacks = () => {
           </motion.div>
         </div>
         <div className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto `}>
-          {testimonials.map((testimonial, index) => (
+          {techTeam.map((testimonial, index) => (
             <FeedbackCard
               key={testimonial.name}
               index={index}
