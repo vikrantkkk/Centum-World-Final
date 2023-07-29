@@ -3,9 +3,9 @@ import { EarthCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 shadow-2xl z-10 overflow-y-hidden`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 shadow-2xl z-10 overflow-hidden`}
       >
         <div className="z-40">
           <h1 className={`${styles.heroHeadText} text-[#915EFF]`}>
