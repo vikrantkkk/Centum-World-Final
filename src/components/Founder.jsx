@@ -39,13 +39,13 @@ const Feedbacks = () => {
 
   return (
     <>
-      <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
+      <div className={`bg-black-100 rounded-[20px] overflow-x-auto -translate-y-48`}>
         <div
           className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}
         >
           <motion.div variants={textVariant()}>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-             Founder...
+             Founder & Co-Founder
             </p>
           </motion.div>
         </div>

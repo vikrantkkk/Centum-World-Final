@@ -43,16 +43,15 @@ const Feedbacks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText}`}>Team Members.</h2>
+        <h2 className={`${styles.sectionHeadText} mb-10`}>Team Members.</h2>
       </motion.div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div
           className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[250px]`}
         >
           <motion.div variants={textVariant()}>
-            <p className={`${styles.heroSubText}`}>&lt; &gt; </p>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-              Management Ecosytem...
+              Management Ecosytem
             </p>
           </motion.div>
         </div>

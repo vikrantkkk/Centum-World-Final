@@ -40,7 +40,7 @@ function AccordionItem({ question, answer }) {
 function App() {
   return (
     <div className="" id="faq">
-      <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div className=" px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <h2 className={`${styles.sectionHeadText} mb-10`}>
           Frequenlty Asked Question(FAQ.)
         </h2>
