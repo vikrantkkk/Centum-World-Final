@@ -60,7 +60,7 @@ function App() {
           />
           <AccordionItem
             question="What trading platforms does JETTRADE FX offer? "
-            answer="ETTRADE FX  states  significant way to  access to the trading platforms such as  JETTRADE FX (JTF). This platform has robust features and  getting benefits  with the enhanced AI(Artificial Intelligence ) technologies and user-friendly interfaces."
+            answer="JETTRADE FX  states  significant way to  access to the trading platforms such as  JETTRADE FX (JTF). This platform has robust features and  getting benefits  with the enhanced AI(Artificial Intelligence ) technologies and user-friendly interfaces."
           />
           <AccordionItem
             question="What is the minimum deposit required to start trading on JETTRADE FX?"

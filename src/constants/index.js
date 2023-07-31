@@ -304,15 +304,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "A. Pariya",
-    designation: "Marketing and Bussiness Development",
-    company: "Centum World",
-    image: pariya,
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Naresh Pacharia",
+    name: "Naresh Pachari",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: pacharia,
