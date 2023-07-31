@@ -66,8 +66,8 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              {nav.id !== "Trade Now" ? (
-                <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.id !== "http://trader.jettradefx.in/" ? (
+                <a href={`${nav.id}`}>{nav.title}</a>
               ) : (
                 <a href="http://trader.jettradefx.in/" target="_blank" className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group">
                   {nav.title}
@@ -103,8 +103,8 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  {nav.id !== "Trade Now" ? (
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id !== "http://trader.jettradefx.in/" ? (
+                    <a href={`${nav.id}`}>{nav.title}</a>
                   ) : (
                     <a href="http://trader.jettradefx.in/" target="_blank">
                       {nav.title}

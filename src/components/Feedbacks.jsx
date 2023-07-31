@@ -9,9 +9,6 @@ import { testimonials } from "../constants";
 const FeedbackCard = ({ index, name, designation, company, image }) => (
   <div className="flex-shrink-0 min-w-[320px] max-w-max">
     <motion.div
-      drag // Enable dragging for the element
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} // Limit dragging within the container
-      dragElastic={0.8}
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
       className="bg-black-200 p-10 rounded-3xl w-[270px]"
     >
@@ -43,7 +40,7 @@ const Feedbacks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} mb-10`}>Team Members.</h2>
+        <h2 className={`${styles.sectionHeadText} mb-10 mt-16`}>Team Members.</h2>
       </motion.div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div

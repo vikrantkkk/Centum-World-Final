@@ -52,27 +52,27 @@ import hrAvatar from "../assets/HR.jpeg"
 
 export const navLinks = [
   {
-    id: "",
+    id: "#",
     title: "Home",
   },
   {
-    id: "about",
+    id: "#about",
     title: "About",
   },
   {
-    id: "work",
+    id: "#work",
     title: "Work",
   },
   {
-    id: "contact",
+    id: "#contact",
     title: "Contact",
   },
   {
-    id: "members",
+    id: "/member",
     title: "White Paper",
   },
   {
-    id: "Trade Now",
+    id: "http://trader.jettradefx.in/",
     title: "Trade Now",
   },
 ];
