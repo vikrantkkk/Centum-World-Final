@@ -52,7 +52,7 @@ export const Footer = () => {
                 <a href="#contact">Contact</a>
                 <a href="#contact">Trade Now</a>
                 <p onClick={showModal} className="cursor-pointer">
-                  Privacy & Policy
+                  Privacy Policy
                 </p>
               </div>
               <div className="address flex flex-col">
@@ -79,7 +79,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col gap-x-5">
+          <div className="flex-col gap-x-5 hidden md:block">
             <div className="flex justify-around">
               <Link to={"www.facebook.com"}>
                 {" "}
@@ -94,7 +94,7 @@ export const Footer = () => {
                 <FaTwitterSquare className="w-5 h-5" />
               </Link>
             </div>
-            <div className="mt-5 w-[110%] flex items-center ">
+            <div className="mt-5 flex items-center ">
               <p>Support: mail@gmail.com</p>
             </div>
           </div>
