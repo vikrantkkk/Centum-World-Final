@@ -42,7 +42,7 @@ function App() {
     <div className="" id="faq">
       <div className=" px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <h2 className={`${styles.sectionHeadText} mb-10`}>
-          Frequenlty Asked Question(FAQ.)
+          Frequently Asked Question(FAQ.)
         </h2>
         <div className="space-y-8">
           {/* Add more questions and answers as needed */}
