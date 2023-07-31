@@ -14,8 +14,8 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
-          <div className="flex-1 flex flex-col">
-            <p className="text-white font-medium text-[16px]">
+          <div className="flex-1 flex flex-col items-center">
+            <p className="text-white font-medium text-[15px]">
               <span className="blue-text-gradient">@</span> {name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">
@@ -40,7 +40,7 @@ const Feedbacks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} mb-10 mt-16`}>Team Members.</h2>
+        <h2 className={`${styles.sectionHeadText} mb-10 mt-32`}>Team Members.</h2>
       </motion.div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div

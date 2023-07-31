@@ -15,6 +15,7 @@ import Video from "./components/Video";
 import TechTeam from "./components/TechTeam";
 import Founder from "./components/Founder";
 import Member from "./components/Member";
+import TradingViewWidget from "./components/TradingView";
 
 // const App = () => {
 //   return (
@@ -69,7 +70,7 @@ const App = () => {
                     <Hero />
                   </div>
                   <About />
-                  <Video />
+                  <TradingViewWidget />
                   <Experience />
                   <Works />
                   {isMemberPage && (

@@ -14,8 +14,8 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
-          <div className="flex-1 flex flex-col">
-            <p className="text-white font-medium text-[16px]">
+          <div className="flex-1 flex flex-col items-center">
+            <p className="text-white font-medium text-[15px]">
               <span className="blue-text-gradient">@</span> {name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">

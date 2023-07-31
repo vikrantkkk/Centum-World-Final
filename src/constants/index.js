@@ -52,7 +52,7 @@ import hrAvatar from "../assets/HR.jpeg"
 
 export const navLinks = [
   {
-    id: "#",
+    id: "/",
     title: "Home",
   },
   {
@@ -240,7 +240,7 @@ const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Yogendra",
+    name: "Yogendra Giri",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: yogendra,
@@ -248,7 +248,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Sanjay",
+    name: "Sanjay Kumar Thakur",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: sanjay,
@@ -256,7 +256,7 @@ const testimonials = [
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Gangaram",
+    name: "Gangadhar Deogam",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: gangaram,
@@ -264,7 +264,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Surendra",
+    name: "Surendra Rajak",
     designation: "Marketing and Bussiness Development",
     company:" Centum World",
     image: sunrendra,
@@ -272,7 +272,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Ajay",
+    name: "Ajay Pareya",
     designation: "Marketing and Bussiness Development",
     company: " Centum World",
     image: ajay,
@@ -280,7 +280,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Hemant",
+    name: "Hemant Kumar Balmuchu",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: hemant,
@@ -288,7 +288,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Sanjay 2",
+    name: "Sanjay Kumar Banra",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: sanjay2,
@@ -296,7 +296,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Sushil",
+    name: "Sushil Purty",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: sushil,
@@ -312,7 +312,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "N. Pacharia",
+    name: "Naresh Pacharia",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: pacharia,

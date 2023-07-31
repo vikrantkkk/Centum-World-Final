@@ -5,17 +5,44 @@ import Founder from "./Founder";
 import Navbar from "./Navbar";
 import Accordion from "./Accordion";
 import { Footer } from "./Footer";
+import Video from "./Video";
+import About from "./About";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from "../styles";
 
 const Member = () => {
   return (
     <div className="bg-primary">
       <Navbar />
-      <div>
-      <Feedbacks />
-      <TechTeam />
-      <Founder />
+      <div className="max-w-6xl mx-auto translate-y-40">
+        <>
+          <motion.div variants={textVariant()}>
+            <h2 className={`${styles.sectionHeadText}`}>About Us</h2>
+          </motion.div>
+
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
+          >
+            Jettrade Fx trading, also referred to as foreign exchange trading,
+            is the buying and selling of currencies with the aim of profiting
+            from fluctuations in their value . Trillions of dollars are traded
+            in the forex market daily, making it one of the largest and most
+            liquid financial markets in the world . Participants in the forex
+            market include individuals, corporations, institutional investors,
+            and governments, among others. Forex trading can be done through
+            financial institutions, brokers, or electronic trading platforms.
+          </motion.p>
+        </>
       </div>
-      <div className="mb-10">
+      <Video />
+      <div>
+        <Feedbacks />
+        <TechTeam />
+        <Founder />
+      </div>
+      <div className="mb-10 -translate-y-40">
         <Accordion />
       </div>
       <Footer />
