@@ -73,11 +73,6 @@ const App = () => {
                   <TradingViewWidget />
                   <Experience />
                   <Works />
-                  {isMemberPage && (
-                    <div id="members">
-                      {/* Render other components specific to the /member route */}
-                    </div>
-                  )}
                   <div className="relative z-0">
                     <Contact />
                     <StarsCanvas />
