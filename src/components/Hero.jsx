@@ -18,7 +18,7 @@ const Hero = () => {
             AI based smart trading apps
           </p>
         </div>
-        <div className="absolute h-[40%] w-[100%] sm:h-[60%] sm:w-[60%] mt- top-[25%] sm:top-[20%] sm:right-[10%]">
+        <div className="absolute h-[40%] w-[100%] sm:h-[60%] sm:w-[60%] top-[25%] sm:top-[20%] sm:right-[-5%]">
           <EarthCanvas />
         </div>
       </div>

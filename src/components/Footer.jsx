@@ -79,8 +79,8 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col gap-x-5 hidden md:block">
-            <div className="flex justify-around">
+          <div className="flex flex-col gap-x-5 h-32 w-full">
+            <div className="flex justify-around md:flex-col h-full items-end">
               <Link to={"www.facebook.com"}>
                 {" "}
                 <FaFacebookF className="w-5 h-5" />
@@ -94,15 +94,15 @@ export const Footer = () => {
                 <FaTwitterSquare className="w-5 h-5" />
               </Link>
             </div>
-            <div className="mt-5 flex items-center ">
-              <p>Support: mail@gmail.com</p>
-            </div>
           </div>
         </div>
       </div>
       <div className=" bg-black-100 text-center flex justify-center sm:gap-x-2  gap-x-0 items-center sm:p-0 p-2 flex-col">
+        <p className="">
+          Support: mail@gmail.com
+        </p>
         <p>&copy; copyright. All right reserved 2023</p>
-        <p>
+        <p className="">
           Disclaimer: Trading are subject to market risk. Read all scheme
           related document carefully
         </p>

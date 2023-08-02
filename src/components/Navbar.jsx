@@ -51,9 +51,9 @@ const Navbar = () => {
             height={60}
             className="object-contain filter invert"
           />
-          <p className="text-white font-bold cursor-pointer flex items-center text-2xl uppercase">
+          <p className="text-white font-bold cursor-pointer text-xl flex items-center gap-2 uppercase">
             JetTrade
-            <span className="text-secondary uppercase"> &nbsp; FX</span>
+            <p className="text-secondary uppercase">FX</p>
           </p>
         </Link>
 

@@ -59,7 +59,7 @@ export default function TradingViewWidget() {
   return (
     <>
       <div>
-        <div className="tradingview-widget-container sm:h-[600px] max-w-7xl mx-auto">
+        <div className="tradingview-widget-container sm:h-[600px] max-w-7xl mx-auto px-2">
           <div id="tradingview_a569f" className="h-full" />
         </div>
         <div className="max-w-7xl mx-auto ">

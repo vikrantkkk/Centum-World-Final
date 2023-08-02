@@ -65,7 +65,7 @@ const App = () => {
             isMemberPage ? null : (
               <>
                 <div className="relative z-40 bg-primary">
-                  <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                  <div className="bg-hero-pattern sm:object-fill bg-cover bg-center pb-28">
                     <Navbar />
                     <Hero />
                   </div>

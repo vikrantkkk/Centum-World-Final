@@ -36,7 +36,9 @@ const Member = () => {
           </motion.p>
         </>
       </div>
+      <div className="p-5">
       <Video />
+      </div>
       <div>
         <Feedbacks />
         <TechTeam />

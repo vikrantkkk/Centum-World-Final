@@ -411,7 +411,7 @@ const projects = [
     image: project1,
   },
   {
-    name: "Centum Token",
+    name: "Centumo Token",
     description: "",
     tags: [
       {
