@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, logo } from "../assets";
-import {AiOutlineArrowRight} from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -34,7 +34,11 @@ const Navbar = () => {
         scrolled ? "sm:bg-primary bg-transparent" : "bg-transparent"
       }`}
     >
-      <div className={`absolute sm:hidden block top-0 transition-all duration-200 w-full h-[25%] z-[-10] left-0 bg-primary ${scrolled ? "bg-primary": "bg-transparent"}`}></div>
+      <div
+        className={`absolute sm:hidden block top-0 transition-all duration-200 w-full h-[25%] z-[-10] left-0 bg-primary ${
+          scrolled ? "bg-primary" : "bg-transparent"
+        }`}
+      ></div>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
@@ -69,9 +73,13 @@ const Navbar = () => {
               {nav.id !== "http://trader.jettradefx.in/" ? (
                 <a href={`${nav.id}`}>{nav.title}</a>
               ) : (
-                <a href="http://trader.jettradefx.in/" target="_blank" className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group">
+                <a
+                  href="http://trader.jettradefx.in/"
+                  target="_blank"
+                  className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group"
+                >
                   {nav.title}
-                  <AiOutlineArrowRight className="group-hover:translate-x-1 transition-all duration-200"/>
+                  <AiOutlineArrowRight className="group-hover:translate-x-1 transition-all duration-200" />
                 </a>
               )}
             </li>

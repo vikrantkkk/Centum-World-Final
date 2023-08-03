@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -35,21 +35,24 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
 );
 
 const Feedbacks = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
 
   return (
     <>
-      <div className={`bg-black-100 rounded-[20px] overflow-x-auto -translate-y-48`}>
+      <div
+        className={`bg-black-100 rounded-[20px] overflow-x-auto -translate-y-48`}
+      >
         <div
           className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}
         >
           <motion.div variants={textVariant()}>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-             Founder & Co-Founder
+              Founder & Co-Founder
             </p>
           </motion.div>
         </div>
-        <div className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto`}>
+        <div
+          className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto`}
+        >
           {founders.map((testimonial, index) => (
             <FeedbackCard
               key={testimonial.name}

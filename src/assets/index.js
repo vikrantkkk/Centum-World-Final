@@ -3,36 +3,54 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import manage from "./manage.png";
 import software from "./sofware.webp";
+import project1 from "./projects/project1.jpg";
+import project2 from "../assets/projects/project2.jpg";
+import project3 from "../assets/projects/project3.jpg";
+import badalAvatar from "../assets/techTeam/badal.png";
+import vikrantAvatar from "../assets/techTeam/vikrant.png";
+import prashantAvatar from "../assets/techTeam/prashant.png";
+import lakhan from "../assets/techTeam/lakhan.png";
+import animesh from "../assets/techTeam/animesh.png";
+import yogendra from "../assets/marketingTeam/yogendra.png";
+import sanjay from "../assets/marketingTeam/sanjay.png";
+import gangaram from "../assets/marketingTeam/gangaram.png";
+import sunrendra from "../assets/marketingTeam/surendra.png";
+import ajay from "../assets/marketingTeam/ajay.png";
+import hemant from "../assets/marketingTeam/hemant.png";
+import sanjay2 from "../assets/marketingTeam/sanjay2..png";
+import sushil from "../assets/marketingTeam/sushil.png";
+import pacharia from "../assets/marketingTeam/pacharia.png";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
+import raju from "../assets/marketingTeam/raju.jpeg";
+import founder from "../assets/founder/founder.jpeg";
+import cofounder from "../assets/founder/coFounder.jpeg";
+import hrAvatar from "../assets/founder/HR.jpeg";
 export {
+  hrAvatar,
+  cofounder,
+  founder,
+  raju,
+  pacharia,
+  sushil,
+  sanjay2,
+  hemant,
+  ajay,
+  sunrendra,
+  gangaram,
+  sanjay,
+  yogendra,
+  animesh,
+  lakhan,
+  prashantAvatar,
+  vikrantAvatar,
+  badalAvatar,
+  project3,
+  project2,
+  project1,
   software,
   manage,
   logo,
@@ -40,27 +58,6 @@ export {
   creator,
   mobile,
   web,
-  github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
 };

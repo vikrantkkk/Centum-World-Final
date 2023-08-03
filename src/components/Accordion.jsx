@@ -29,7 +29,6 @@ function AccordionItem({ question, answer }) {
       </button>
       {open && (
         <div className="px-4 pt-4 pb-2 text-black bg-secondary rounded-md">
-          {/* Content for the answer goes here */}
           {answer}
         </div>
       )}

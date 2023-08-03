@@ -23,19 +23,21 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[310px] mx-5 my-5 h-[90%] flex flex-col justify-between "
+        className="bg-tertiary p-5 rounded-2xl sm:w-[310px] mx-5 my-5 h-[90%] flex flex-col"
       >
-        <div className="relative">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full flex-1 object-cover rounded-2xl h-full"
-          />
-        </div>
+        <div className="h-full flex flex-col">
+          <div className="h-[90%]">
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full flex-1 object-cover rounded-2xl h-full"
+            />
+          </div>
 
-        <div className="">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <div className >
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          </div>
         </div>
       </Tilt>
     </motion.div>

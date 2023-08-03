@@ -40,7 +40,9 @@ const Feedbacks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} mb-10 mt-32`}>Team Members.</h2>
+        <h2 className={`${styles.sectionHeadText} mb-10 mt-32`}>
+          Team Members.
+        </h2>
       </motion.div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div

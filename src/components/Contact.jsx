@@ -1,13 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { Input, Button, Select } from "antd";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import MapContainer from "./MapContainer";
 import { VscSend } from "react-icons/vsc";
-const { Option } = Select;
 import ContactGif from "../assets/contact2.png";
 
 const Contact = () => {
@@ -17,10 +14,6 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
-  // service_za49s7k
-  // template_4gl9eio
-  // ypleSUA3YKg2F36nq
   const [loading, setLoading] = useState(false);
 
   const [location, setLocation] = useState("Kolkata");
@@ -44,11 +37,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // service_penm0se
     emailjs
       .send(
-        // "service_za49s7k",service key
-        // "template_4gl9eio",  template key
         {
           from_name: form.name,
           to_name: "Jet Trade FX",
@@ -56,7 +46,6 @@ const Contact = () => {
           to_email: "enterYourMail@gmail.com",
           message: form.message,
         }
-        // "ypleSUA3YKg2F36nq"
       )
       .then(
         () => {
@@ -81,7 +70,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden`}
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -92,7 +81,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
+            className=" flex flex-col gap-8"
           >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Name</span>
@@ -146,7 +135,7 @@ const Contact = () => {
         >
           <img
             src={ContactGif}
-            alt=""
+            alt="contact-image"
             className="sm:w-full h-full sm:h-auto w-auto p-10 animate-pulse mt-14"
           />
         </motion.div>

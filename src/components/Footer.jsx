@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
-import { Modal, Select, Button } from "antd";
+import { Modal, Select } from "antd";
 const { Option } = Select;
 
 export const Footer = () => {
@@ -20,13 +21,10 @@ export const Footer = () => {
     setVisibleModal(false);
   };
   const today = new Date();
-
-  // Get the individual components of the date (year, month, day)
   const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, "0"); // Month is zero-indexed, so we add 1
+  const month = String(today.getMonth() + 1).padStart(2, "0");
   const day = String(today.getDate()).padStart(2, "0");
 
-  // Format the date as "YYYY-MM-DD"
   const formattedDate = `${year}-${month}-${day}`;
 
   return (
@@ -58,7 +56,7 @@ export const Footer = () => {
               <div className="address flex flex-col">
                 <Select
                   defaultValue="Kolkata"
-                  style={{ width: 120, marginBottom: 5 }}
+                  style={{ width: 100, marginBottom: 5 }}
                   onChange={changeLocation}
                 >
                   <Option value="Kolkata">Kolkata</Option>
@@ -81,27 +79,33 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col gap-x-5 h-32 w-full">
             <div className="flex justify-around md:flex-col h-full items-end">
-              <Link to={"www.facebook.com"}>
+              <Link
+                to={"https://wwww.facebook.com/CENTUMWORLD?mibextid=ZbWKeL"}
+              >
                 {" "}
-                <FaFacebookF className="w-5 h-5" />
+                <FaFacebookF className="w-5 h-5 hover:fill-secondary transition-all duration-200" />
               </Link>
-              <Link to={"www.linkedin.com"}>
+              <Link to={"https://www.linkedin.com/in/centumworld"}>
                 {" "}
-                <FaLinkedin className="w-5 h-5" />
+                <FaLinkedin className="w-5 h-5 hover:fill-secondary transition-all duration-200" />
               </Link>
-              <Link to={"www.twitter.com"}>
+              <Link
+                to={
+                  "https://twitter.com/centumworld?t=1XYIFt8eoKUo1HyZQUzd3Q&s=08"
+                }
+              >
                 {" "}
-                <FaTwitterSquare className="w-5 h-5" />
+                <FaTwitterSquare className="w-5 h-5 hover:fill-secondary transition-all duration-200" />
               </Link>
             </div>
           </div>
         </div>
       </div>
       <div className=" bg-black-100 text-center flex justify-center sm:gap-x-2  gap-x-0 items-center sm:p-0 p-2 flex-col">
-        <p className="">
-          Support: mail@gmail.com
-        </p>
-        <p>&copy; copyright. All right reserved 2023</p>
+        <div className="sm:flex sm:flex-row flex-col items-center gap-2">
+          <p>support@centumworld.com</p>
+          <p>&copy; copyright. All right reserved 2023</p>
+        </div>
         <p className="">
           Disclaimer: Trading are subject to market risk. Read all scheme
           related document carefully
@@ -113,7 +117,6 @@ export const Footer = () => {
         visible={visibleModal}
         onCancel={handleCancel}
         closable={true}
-        // width={"50vw"}
         height={"100vh"}
       >
         <div className="flex flex-col gap-y-5 text-justify z-40">
