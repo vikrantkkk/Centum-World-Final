@@ -48,7 +48,7 @@ const Feedbacks = () => {
           </div>
         </div>
         <div
-          className={`-mt-20 pb-14 ${styles.paddingX} flex flex flex-wrap justify-center items-center gap-10 `}
+          className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center items-center gap-10 `}
         >
           {techTeam.map((testimonial, index) => (
             <FeedbackCard
