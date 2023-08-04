@@ -6,12 +6,11 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import Navbar from "./Navbar";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[210px] mx-5 my-5">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    <div
+      // variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
@@ -32,19 +31,18 @@ const ServiceCard = ({ index, title, icon }) => (
           {title}
         </h3>
       </div>
-    </motion.div>
+    </div>
   </Tilt>
 );
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      </div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+      <p
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
       >
         JETTRADE FX is a user-friendly and reliable trading platform that caters
@@ -59,7 +57,7 @@ const About = () => {
         bank transfers and online methods, ensure convenience for traders
         worldwide. Overall, JETTRADE FX provides a comprehensive trading
         environment with user-friendliness and exceptional support.
-      </motion.p>
+      </p>
 
       <p className={`${styles.sectionSubText} mt-10`}>Services</p>
       <div className=" flex flex-wrap gap-10 justify-evenly">

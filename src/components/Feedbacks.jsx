@@ -7,15 +7,15 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
 const FeedbackCard = ({ index, name, designation, company, image }) => (
-  <div className="flex-shrink-0 min-w-[320px] max-w-max">
-    <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="bg-black-200 p-10 rounded-3xl w-[270px]"
+  <>
+    {/* <div className="flex-shrink-0 min-w-[320px] max-w-max"> */}
+    <div
+      className="bg-black-200 p-10 rounded-3xl w-[290px] shadow-md shadow-[#151030]"
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
           <div className="flex-1 flex flex-col items-center">
-            <p className="text-white font-medium text-[15px]">
+            <p className="text-white font-medium text-[14px]">
               <span className="blue-text-gradient">@</span> {name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">
@@ -30,8 +30,9 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
           />
         </div>
       </div>
-    </motion.div>
-  </div>
+    </div>
+    {/* </div> */}
+  </>
 );
 
 const Feedbacks = () => {
@@ -39,23 +40,23 @@ const Feedbacks = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <h2 className={`${styles.sectionHeadText} mb-10 mt-32`}>
           Team Members.
         </h2>
-      </motion.div>
+      </div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div
           className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[250px]`}
         >
-          <motion.div variants={textVariant()}>
+          <div>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
               Management Ecosytem
             </p>
-          </motion.div>
+          </div>
         </div>
         <div
-          className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto`}
+          className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center items-center gap-5`}
         >
           {testimonials.map((testimonial, index) => (
             <FeedbackCard

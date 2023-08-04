@@ -59,18 +59,18 @@ export default function TradingViewWidget() {
   return (
     <>
       <div>
-        <div className="tradingview-widget-container sm:h-[600px] max-w-7xl mx-auto px-2">
+        <div className="tradingview-widget-container sm:h-[600px] max-w-7xl mx-auto">
           <div id="tradingview_a569f" className="h-full" />
         </div>
-        <div className="max-w-7xl mx-auto ">
+      </div>
+        <div className="max-w-7xl mx-auto">
           <button
-            className="trade-now-button text-secondary flex items-center gap-1 border rounded-md mt-2 p-1 hover:bg-secondary hover:text-black transition-all duration-200"
+            className="trade-now-button text-secondary flex items-center gap-1 border rounded-md p-1 hover:bg-secondary hover:text-black transition-all duration-200 mt-2"
             onClick={handleTradeNowClick}
           >
             Trade Now <AiOutlineArrowRight />
           </button>
         </div>
-      </div>
     </>
   );
 }

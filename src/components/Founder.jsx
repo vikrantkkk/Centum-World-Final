@@ -7,10 +7,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { founders } from "../constants";
 
 const FeedbackCard = ({ index, name, designation, company, image }) => (
-  <div className="flex-shrink-0 min-w-[320px] max-w-max">
-    <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="bg-black-200 p-10 rounded-3xl w-[270px]"
+    <div
+      className="bg-black-200 p-10 rounded-3xl w-[290px] shadow-md shadow-[#151030]"
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
@@ -30,8 +28,8 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
           />
         </div>
       </div>
-    </motion.div>
-  </div>
+    </div>
+
 );
 
 const Feedbacks = () => {
@@ -44,14 +42,14 @@ const Feedbacks = () => {
         <div
           className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}
         >
-          <motion.div variants={textVariant()}>
+          <div>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
               Founder & Co-Founder
             </p>
-          </motion.div>
+          </div>
         </div>
         <div
-          className={`-mt-20 pb-14 ${styles.paddingX} flex space-x-4 overflow-x-auto`}
+          className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center items-center gap-10`}
         >
           {founders.map((testimonial, index) => (
             <FeedbackCard
