@@ -41,12 +41,14 @@ export default function TradingViewWidget() {
           style: "1",
           locale: "in",
           toolbar_bg: "#f1f3f6",
-          enable_publishing: false,
+          enable_publishing: true,
           backgroundColor: "rgba(1, 4, 28, 1)",
-          hide_top_toolbar: true,
+          hide_top_toolbar: false,
           hide_legend: true,
-          save_image: false,
+          save_image: true,
           container_id: "tradingview_a569f",
+          hotlist:true,
+          show_popup_button: true,
         });
       }
     }

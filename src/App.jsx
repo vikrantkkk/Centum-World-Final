@@ -30,14 +30,13 @@ const App = () => {
     <>
       <Routes>
         <Route path="/member" element={<Member />} />
-        {/* Default route when not on /member */}
         <Route
           path="/"
           element={
             isMemberPage ? null : (
               <>
                 <div className="relative z-40 bg-primary">
-                  <div className="bg-hero-pattern sm:object-fill bg-cover bg-center pb-28">
+                  <div className="bg-hero-pattern bg-cover bg-center">
                     <Navbar />
                     <Hero />
                   </div>

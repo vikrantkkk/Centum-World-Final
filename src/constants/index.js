@@ -87,7 +87,7 @@ const experiences = [
     title: "SEP' 2021",
     iconBg: "#E6DEDD",
     points: [
-      "CENTUM WORLD SaaS App key EcoSystem . 10+ Unique & Usefull AI Apps",
+      "CENTUM WORLD SaaS App key EcoSystem", "10+ Unique & Usefull AI Apps",
     ],
   },
   {
@@ -106,7 +106,7 @@ const experiences = [
     title: "FEB'2022",
     iconBg: "#383E56",
     points: [
-      "Begining of a New Era in Digital Crypto Asset. Launch of CENTUMO Token, Liquidity, Smart contracts & Listing on Pancake Swap, Binanace etc.",
+      "Begining of a New Era in Digital Crypto Asset.", "Launch of CENTUMO Token, Liquidity, Smart contracts & Listing on Pancake Swap, Binanace etc."
     ],
   },
   {
@@ -116,7 +116,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "",
     points: [
-      "Research & Development on Self Blockchain Technology Platform, Mining & Mint Infrastructure",
+      "Research & Development on self Blockchain Technology Platform, Mining & Mint Infrastructure",
     ],
   },
   {
