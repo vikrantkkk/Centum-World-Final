@@ -12,6 +12,7 @@ import { Footer } from "./components/Footer";
 import Member from "./components/Member";
 import TradingViewWidget from "./components/TradingView";
 import { useEffect } from "react";
+import TradeButton from "./components/TradeButton";
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
                   </div>
                   <About />
                   <TradingViewWidget />
+                  <TradeButton />
                   <Experience />
                   <Works />
                   <div className="relative z-0">

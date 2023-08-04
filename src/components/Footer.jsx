@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
 import { Modal, Select } from "antd";
@@ -56,7 +55,7 @@ export const Footer = () => {
               <div className="address flex flex-col">
                 <Select
                   defaultValue="Kolkata"
-                  style={{ width: 100, marginBottom: 5 }}
+                  style={{ width: 120, marginBottom: 5}}
                   onChange={changeLocation}
                 >
                   <Option value="Kolkata">Kolkata</Option>
