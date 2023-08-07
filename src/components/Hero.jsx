@@ -1,7 +1,48 @@
+import { useEffect, useRef, useState } from "react";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
+import welcomeVideo from "../assets/video/welcome-video2.mp4";
+import { IoClose }from "react-icons/io5";
+import {FaRegCirclePlay} from "react-icons/fa6"
 
 const Hero = () => {
+  const [popupVisible, setPopupVisible] = useState(true);
+  const videoRef = useRef(null);
+  const playButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.addEventListener("canplaythrough", handleCanPlay);
+    }
+    
+    return () => {
+      if (videoRef.current) {
+        videoRef.current.removeEventListener("canplaythrough", handleCanPlay);
+      }
+    };
+  }, [videoRef]);
+
+  const handleCanPlay = () => {
+    // Video is ready to play, now unmute it and play
+    videoRef.current.pause();
+    videoRef.current.muted = false;
+  };
+
+  const closePopup = () => {
+    setPopupVisible(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
+  const handlePlayButtonClick = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = false;
+      videoRef.current.play();
+      playButtonRef.current.style.display = "none"; // Hide the play button
+    }
+  };
   return (
     <section className={`relative h-screen mx-auto`}>
       <div
@@ -21,6 +62,32 @@ const Hero = () => {
           <EarthCanvas />
         </div>
       </div>
+      {popupVisible && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
+          <div className="relative h-full">
+            <video
+              ref={videoRef}
+              src={welcomeVideo}
+              className=" h-full w-full"
+              onEnded={closePopup}
+              preload="auto"
+            />
+            <button
+              ref={playButtonRef}
+              onClick={handlePlayButtonClick}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-gray-300 focus:outline-none"
+            >
+              <FaRegCirclePlay fontSize={50}/>
+            </button>
+            <button
+              onClick={closePopup}
+              className="absolute top-0 right-0 m-4 text-white hover:text-gray-300 focus:outline-none"
+            >
+              <IoClose fontSize={40} />
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

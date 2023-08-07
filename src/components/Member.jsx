@@ -7,7 +7,7 @@ import Accordion from "./Accordion";
 import { Footer } from "./Footer";
 import Video from "./Video";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+// import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
 const Member = () => {
@@ -16,12 +16,11 @@ const Member = () => {
       <Navbar />
       <div className="max-w-6xl mx-auto translate-y-40">
         <>
-          <motion.div variants={textVariant()}>
+          <div>
             <h2 className={`${styles.sectionHeadText}`}>About Us</h2>
-          </motion.div>
+          </div>
 
-          <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
+          <p
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
           >
             Jettrade Fx trading, also referred to as foreign exchange trading,
@@ -32,7 +31,7 @@ const Member = () => {
             market include individuals, corporations, institutional investors,
             and governments, among others. Forex trading can be done through
             financial institutions, brokers, or electronic trading platforms.
-          </motion.p>
+          </p>
         </>
       </div>
       <div className="p-5">

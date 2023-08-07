@@ -30,12 +30,12 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center sm:py-2 bg-primary fixed top-0 z-[20] ${
+      } w-full flex items-center sm:py-2 bg-primary fixed top-0 z-20 ${
         scrolled ? "sm:bg-primary" : "bg-transparent"
       }`}
     >
       <div
-        className={`absolute sm:hidden block top-0 transition-all duration-200 w-full h-[25%] z-[-10] left-0 bg-primary ${
+        className={`absolute sm:hidden block top-0 transition-all duration-200 w-full h-[25%] left-0 bg-primary ${
           scrolled ? "bg-primary" : "bg-transparent"
         }`}
       ></div>

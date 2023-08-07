@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+// import { slideIn } from "../utils/motion";
 import { VscSend } from "react-icons/vsc";
 import ContactGif from "../assets/contact2.png";
 
