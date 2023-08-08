@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-// import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
 const FeedbackCard = ({ index, name, designation, company, image }) => (
   <>
-    {/* <div className="flex-shrink-0 min-w-[320px] max-w-max"> */}
     <div
       className="bg-black-200 p-10 rounded-3xl w-[290px] shadow-md shadow-[#151030]"
     >
@@ -31,7 +29,6 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
         </div>
       </div>
     </div>
-    {/* </div> */}
   </>
 );
 

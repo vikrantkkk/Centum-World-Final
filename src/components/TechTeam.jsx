@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-
+import React from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-// import { fadeIn, textVariant } from "../utils/motion";
 import { techTeam } from "../constants";
 
 const FeedbackCard = ({ index, name, designation, company, image }) => (

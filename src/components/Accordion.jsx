@@ -44,7 +44,6 @@ function App() {
           Frequently Asked Question(FAQ.)
         </h2>
         <div className="space-y-8">
-          {/* Add more questions and answers as needed */}
           <AccordionItem
             question="What is JETTRADE FX?"
             answer="JETTRADE FX  is a  trading platform that allows users to trade various financial instruments, including currency pairs, indices, commodities, and cryptocurrencies."

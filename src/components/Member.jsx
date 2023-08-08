@@ -6,8 +6,6 @@ import Navbar from "./Navbar";
 import Accordion from "./Accordion";
 import { Footer } from "./Footer";
 import Video from "./Video";
-import { motion } from "framer-motion";
-// import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
 const Member = () => {

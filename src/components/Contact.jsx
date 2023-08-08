@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-// import { slideIn } from "../utils/motion";
 import { VscSend } from "react-icons/vsc";
 import ContactGif from "../assets/contact2.png";
 
@@ -73,7 +72,6 @@ const Contact = () => {
         className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10`}
       >
         <div
-          // variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] text-white-100 text-opacity-100 p-8 rounded-2xl"
         >
           <p className={styles.sectionSubText}>Get in touch</p>
@@ -130,7 +128,6 @@ const Contact = () => {
           </form>
         </div>
         <div
-          // variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden md:block hidden "
         >
           <img
