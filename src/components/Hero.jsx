@@ -13,6 +13,14 @@ const Hero = () => {
   const playButtonRef = useRef(null);
 
   useEffect(() => {
+    const hasSeenVideo = localStorage.getItem("hasSeenVideo");
+
+    if (hasSeenVideo) {
+      setPopupVisible(false); // Hide the popup if the user has seen the video
+    }
+  }, []);
+
+  useEffect(() => {
     if (videoRef.current) {
       videoRef.current.addEventListener("canplaythrough", handleCanPlay);
     }
@@ -42,6 +50,8 @@ const Hero = () => {
       videoRef.current.muted = false;
       videoRef.current.play();
       playButtonRef.current.style.display = "none"; // Hide the play button
+
+      localStorage.setItem("hasSeenVideo", "true");
     }
   };
 
