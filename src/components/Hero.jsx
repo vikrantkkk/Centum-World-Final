@@ -3,8 +3,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import welcomeVideoEnglish from "../assets/video/welcome-video-english.mp4";
 import welcomeVideoHindi from "../assets/video/welcome-video-hindi.mp4";
-import {AiFillPlayCircle} from "react-icons/ai"
-import {IoPlayCircleSharp, IoClose} from "react-icons/io5"
+import { AiFillPlayCircle } from "react-icons/ai";
+import { IoPlayCircleSharp, IoClose } from "react-icons/io5";
 
 const Hero = () => {
   const [popupVisible, setPopupVisible] = useState(true);
@@ -19,6 +19,11 @@ const Hero = () => {
       setPopupVisible(false); // Hide the popup if the user has seen the video
     }
   }, []);
+
+  
+  setTimeout(() => {
+    localStorage.removeItem("hasSeenVideo");
+  }, 120000 )
 
   useEffect(() => {
     if (videoRef.current) {
@@ -50,7 +55,6 @@ const Hero = () => {
       videoRef.current.muted = false;
       videoRef.current.play();
       playButtonRef.current.style.display = "none"; // Hide the play button
-
       localStorage.setItem("hasSeenVideo", "true");
     }
   };
@@ -97,13 +101,16 @@ const Hero = () => {
               onClick={handlePlayButtonClick}
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-gray-300 focus:outline-none"
             >
-              <IoPlayCircleSharp fontSize={50} style={{background:"black", borderRadius:"100%"}} />
+              <IoPlayCircleSharp
+                fontSize={50}
+                style={{ background: "black", borderRadius: "100%" }}
+              />
             </button>
             <button
               onClick={closePopup}
               className="absolute top-0 right-0 m-4 text-white hover:text-gray-300 focus:outline-none"
             >
-              <IoClose fontSize={40}/>
+              <IoClose fontSize={40} />
             </button>
 
             <div className="absolute bottom-4 right-4">
