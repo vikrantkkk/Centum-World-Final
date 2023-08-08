@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
-import welcomeVideoEnglish from "../assets/video/welcome-video2.mp4";
-import welcomeVideoHindi from "../assets/video/welcome-video.mp4";
+import welcomeVideoEnglish from "../assets/video/welcome-video-english.mp4";
+import welcomeVideoHindi from "../assets/video/welcome-video-hindi.mp4";
 import { IoClose } from "react-icons/io5";
 import { FaRegCirclePlay } from "react-icons/fa6";
 
