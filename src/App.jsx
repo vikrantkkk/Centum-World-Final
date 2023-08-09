@@ -7,7 +7,7 @@ import {
   Navbar,
   Works,
   StarsCanvas,
-  ChatApp
+  // ChatApp
 } from "./components";
 import { Footer } from "./components/Footer";
 import Member from "./components/Member";
@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <>
-    <ChatApp />
+    {/* <ChatApp /> */}
       <Routes>
         <Route path="/member" element={<Member />} />
         <Route

@@ -21,9 +21,9 @@ const Hero = () => {
   }, []);
 
   
-  // setTimeout(() => {
-  //   localStorage.removeItem("hasSeenVideo");
-  // }, 120000 )
+  setTimeout(() => {
+    localStorage.removeItem("hasSeenVideo");
+  }, 30000 )
 
   useEffect(() => {
     if (videoRef.current) {
