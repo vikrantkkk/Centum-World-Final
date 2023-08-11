@@ -133,61 +133,61 @@ const experiences = [
 
 const testimonials = [
   {
-    name: "Yogendra Giri",
+    name: "Y. Giri",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: yogendra,
   },
   {
-    name: "Sanjay Kumar Thakur",
+    name: "S. K Thakur",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: sanjay,
   },
   {
-    name: "Gangadhar Deogam",
+    name: "G. Deogam",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: gangaram,
   },
   {
-    name: "Surendra Rajak",
+    name: "S. Rajak",
     designation: "Marketing and Bussiness Development",
     company: " Centum World",
     image: sunrendra,
   },
   {
-    name: "Ajay Pareya",
+    name: "A. Pareya",
     designation: "Marketing and Bussiness Development",
     company: " Centum World",
     image: ajay,
   },
   {
-    name: "Hemant Kumar Balmuchu",
+    name: "H. K Balmuchu",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: hemant,
   },
   {
-    name: "Sanjay Kumar Banra",
+    name: "S. K Banra",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: sanjay2,
   },
   {
-    name: "Sushil Purty",
+    name: "S. Purty",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: sushil,
   },
   {
-    name: "Naresh Pachari",
+    name: "N. Pachari",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: pacharia,
   },
   {
-    name: "Raju Balmuchu",
+    name: "R. Balmuchu",
     designation: "Marketing and Bussiness Development",
     company: "Centum World",
     image: raju,
@@ -196,31 +196,31 @@ const testimonials = [
 
 const techTeam = [
   {
-    name: "Badal Mandal",
+    name: "B. Mandal",
     designation: "Software Developer",
     company: "Centum World",
     image: badalAvatar,
   },
   {
-    name: "Vikrant Kumar",
+    name: "V. Kumar",
     designation: "Software Developer",
     company: "Centum World",
     image: vikrantAvatar,
   },
   {
-    name: "Prashant Kumar",
+    name: "P. Kumar",
     designation: "Software Developer",
     company: "Centum World",
     image: prashantAvatar,
   },
   {
-    name: "Lakhan Mahto",
+    name: "L. Mahto",
     designation: "Software Developer",
     company: "Centum World",
     image: lakhan,
   },
   {
-    name: "Animesh Gupta",
+    name: "A. Gupta",
     designation: "Software Developer Intern",
     company: "Centum World",
     image: animesh,

@@ -8,7 +8,7 @@ import { testimonials } from "../constants";
 const FeedbackCard = ({ index, name, designation, company, image }) => (
   <>
     <div
-      className="bg-black-200 p-10 rounded-3xl w-[290px] shadow-md shadow-[#151030]"
+      className="bg-black-200 p-10 rounded-3xl w-[250px] shadow-md shadow-[#151030]"
     >
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
