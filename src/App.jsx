@@ -13,7 +13,7 @@ import { Footer } from "./components/Footer";
 import Member from "./components/Member";
 import TradingViewWidget from "./components/TradingView";
 import { useEffect } from "react";
-import TradeButton from "./components/TradeButton";
+import TradeButton from "./components/TradeButton"; 
 
 
 const App = () => {
