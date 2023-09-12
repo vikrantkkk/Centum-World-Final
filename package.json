@@ -1,6 +1,7 @@
 {
   "name": "3dfolio",
   "homepage": "http://jettradefx.in",
+  "proxy": "http://localhost:4000",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +15,7 @@
     "@react-three/drei": "^9.78.2",
     "@react-three/fiber": "^8.13.5",
     "antd": "^5.7.0",
+    "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "dotenv-webpack": "^8.0.1",
     "firebase": "^10.1.0",

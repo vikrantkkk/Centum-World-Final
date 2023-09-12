@@ -1,15 +1,12 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { testimonials } from "../constants";
+import axios from "axios";
+import { useEffect } from "react";
 
-const FeedbackCard = ({ index, name, designation, company, image }) => (
+const FeedbackCard = ({ name, designation, company, image }) => (
   <>
-    <div
-      className="bg-black-200 p-10 rounded-3xl w-[250px] shadow-md shadow-[#151030]"
-    >
+    <div className="bg-black-200 p-10 rounded-3xl w-[250px] shadow-md shadow-[#151030]">
       <div className="">
         <div className="mt-7 flex flex-col-reverse items-center gap-2">
           <div className="flex-1 flex flex-col items-center">
@@ -23,7 +20,7 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
 
           <img
             src={image}
-            alt={`feedback_by-${name}`}
+            alt={`image-of-${name}`}
             className="rounded-full object-cover h-28 w-28"
           />
         </div>
@@ -33,7 +30,18 @@ const FeedbackCard = ({ index, name, designation, company, image }) => (
 );
 
 const Feedbacks = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
+  useEffect(() => {
+    fetchAllFranchise();
+  }, []);
+
+  const fetchAllFranchise = async () => {
+    try {
+      const response = await axios.get("/portfolio/get-all-franchises");
+      console.log("Data Fetched");
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
 
   return (
     <>
@@ -48,7 +56,7 @@ const Feedbacks = () => {
         >
           <div>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-              Management Ecosytem
+              Franchise Team
             </p>
           </div>
         </div>

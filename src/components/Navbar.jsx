@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, logo } from "../assets";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Select from "./Select";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -84,6 +84,7 @@ const Navbar = () => {
               )}
             </li>
           ))}
+          <Select />
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -120,6 +121,7 @@ const Navbar = () => {
                   )}
                 </li>
               ))}
+              <Select />
             </ul>
           </div>
         </div>

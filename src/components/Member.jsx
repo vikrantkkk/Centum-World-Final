@@ -7,6 +7,7 @@ import Accordion from "./Accordion";
 import { Footer } from "./Footer";
 import Video from "./Video";
 import { styles } from "../styles";
+import FranchiseTeam from "./FranchiseTeam";
 
 const Member = () => {
   return (
@@ -37,6 +38,7 @@ const Member = () => {
       </div>
       <div>
         <Feedbacks />
+        <FranchiseTeam />
         <TechTeam />
         <Founder />
       </div>
