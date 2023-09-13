@@ -8,6 +8,7 @@ import { Footer } from "./Footer";
 import Video from "./Video";
 import { styles } from "../styles";
 import FranchiseTeam from "./FranchiseTeam";
+import State from "./State";
 
 const Member = () => {
   return (
@@ -37,6 +38,7 @@ const Member = () => {
       <Video />
       </div>
       <div>
+        <State />
         <FranchiseTeam />
         <Feedbacks />
         <TechTeam />

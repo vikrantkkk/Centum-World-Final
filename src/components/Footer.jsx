@@ -50,7 +50,7 @@ export const Footer = () => {
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>
-                <button onClick={handleTradeNowClick } >Trade Now <AiOutlineArrowRight /></button>
+                <a href="http://trader.jettradefx.in/">Trade Now</a>
                 <p onClick={showModal} className="cursor-pointer">
                   Privacy Policy
                 </p>

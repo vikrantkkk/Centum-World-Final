@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { indianStates } from "../utils/In-State";
+import { founders } from "../constants";
+import { citiesByState, indianStates } from "../utils/In-State";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import { useState } from "react";
 import axios from "axios";
 
 const FeedbackCard = ({ name, state }) => {
+  const formattedState = state.join(", ");
   return (
     <div className="bg-black-200 p-10 rounded-3xl w-[300px] shadow-md shadow-[#151030]">
       <div className="">
@@ -15,7 +17,7 @@ const FeedbackCard = ({ name, state }) => {
             <p className="text-white font-medium text-[15px]">
               <span className="blue-text-gradient">@</span>{name}
             </p>
-            <p className="mt-1 text-secondary text-[12px] text-center">Franchise of {state}</p>
+            <p className="mt-1 text-secondary text-[12px] text-center">SHO of {formattedState}</p>
           </div>
           <img
             src={franchiseAvatar}
@@ -28,7 +30,7 @@ const FeedbackCard = ({ name, state }) => {
   );
 };
 
-const FranchiseTeam = () => {
+const Feedbacks = () => {
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
 
@@ -39,7 +41,7 @@ const FranchiseTeam = () => {
   const fetchAllState = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/portfolio/get-all-franchises"
+        "http://localhost:4000/portfolio/get-all-states"
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
@@ -55,11 +57,14 @@ const FranchiseTeam = () => {
 
   return (
     <>
+      <div>
+        <h2 className={`${styles.sectionHeadText} mt-32`}>Team Members.</h2>
+      </div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
           <div className="flex justify-between items-center">
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-              Franchise MEMBER
+              SHO MEMBER
             </p>
               <select
                 value={selectedState}
@@ -84,7 +89,7 @@ const FranchiseTeam = () => {
                 key={item.fname}
                 index={index}
                 data={data}
-                state={item.franchiseState}
+                state={item.selectedState}
               />
             ))}
           </div>
@@ -94,5 +99,4 @@ const FranchiseTeam = () => {
   );
 };
 
-export default SectionWrapper(FranchiseTeam, "");
-
+export default SectionWrapper(Feedbacks, "");
