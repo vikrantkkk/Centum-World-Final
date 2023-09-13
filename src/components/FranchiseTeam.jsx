@@ -40,8 +40,8 @@ const FranchiseTeam = () => {
 
   const fetchAllState = async () => {
     try {
-      const response = await axios.get(
-        "http://localhost:4000/portfolio/get-all-franchises"
+      const response = await axios.get(`${baseUrl.apiUrl}` + 
+        "/portfolio/get-all-franchises"
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
@@ -63,7 +63,7 @@ const FranchiseTeam = () => {
     let data = {
       state : e.target.value
     }
-    axios.post("http://localhost:4000/portfolio/filter-franchise-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}` + "/portfolio/filter-franchise-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
 
     .then((res)=>{
       setData(res.data)

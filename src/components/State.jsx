@@ -7,6 +7,7 @@ import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import { useState } from "react";
 import allState from "../utils/In-State";
 import axios from "axios";
+import baseUrl from "../../baseUrl";
 
 const FeedbackCard = ({ name, state }) => {
   const formattedState = state.join(", ");
@@ -35,12 +36,13 @@ const Feedbacks = () => {
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
   const states = allState.states.map((stateData) => stateData.state);
+  console.log(process.env.REACT_APP_BASE_URL);
  
 
   const fetchAllState = async () => {
     try {
-      const response = await axios.get(
-        "http://localhost:4000/portfolio/get-all-states"
+      const response = await axios.get(`${baseUrl.apiUrl}` + 
+        "/portfolio/get-all-states"
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
@@ -61,7 +63,7 @@ const Feedbacks = () => {
     let data = {
       state : e.target.value
     }
-    axios.post("http://localhost:4000/portfolio/filter-sho-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}` + "/portfolio/filter-sho-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
 
     .then((res)=>{
       setData(res.data)
