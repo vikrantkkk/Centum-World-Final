@@ -5,6 +5,7 @@ import { founders } from "../constants";
 import { citiesByState, indianStates } from "../utils/In-State";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import { useState } from "react";
+import allState from "../utils/In-State";
 import axios from "axios";
 
 const FeedbackCard = ({ name, state }) => {
@@ -33,10 +34,8 @@ const FeedbackCard = ({ name, state }) => {
 const Feedbacks = () => {
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
-
-  const handleStateChange = (e) => {
-    setSelectedState(e.target.value);
-  };
+  const states = allState.states.map((stateData) => stateData.state);
+ 
 
   const fetchAllState = async () => {
     try {
@@ -54,6 +53,24 @@ const Feedbacks = () => {
   useEffect(() => {
     fetchAllState();
   }, []);
+
+  const handleStateChange = (e) => {
+    setData([])
+    const state = e.target.value;
+    console.log(state)
+    let data = {
+      state : e.target.value
+    }
+    axios.post("http://localhost:4000/portfolio/filter-sho-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
+
+    .then((res)=>{
+      setData(res.data)
+      console.log(res.data)
+    })
+    .catch((err)=>{
+      console.log(err.response.data.message)
+    })
+  };
 
   return (
     <>
@@ -73,8 +90,8 @@ const Feedbacks = () => {
                 id="in-state"
               >
                 <option value="">Select a State</option>
-                {indianStates.map((state, index) => (
-                  <option key={index} value={state} className="bg-primary">
+                {states.map((state) => (
+                  <option key={state} value={state} className="bg-primary">
                     {state}
                   </option>
                 ))}

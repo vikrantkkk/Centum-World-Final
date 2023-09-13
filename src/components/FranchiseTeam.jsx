@@ -3,7 +3,6 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { citiesByState, indianStates } from "../utils/In-State";
 import allState from "../utils/In-State";
-import { useState } from "react";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import { useState } from "react";
 import axios from "axios";
