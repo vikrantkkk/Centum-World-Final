@@ -25,7 +25,10 @@ export const Footer = () => {
   const day = String(today.getDate()).padStart(2, "0");
 
   const formattedDate = `${year}-${month}-${day}`;
-
+  
+  const handleTradeNowClick = () => {
+    window.open("http://trader.jettradefx.in/", "_self");
+  }
   return (
     <>
       <div className="bg-black-100 h-46 flex sm:flex-row flex-col items-center p-10">
@@ -47,7 +50,7 @@ export const Footer = () => {
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
                 <a href="#contact">Contact</a>
-                <a href="#contact">Trade Now</a>
+                <button onClick={handleTradeNowClick } >Trade Now <AiOutlineArrowRight /></button>
                 <p onClick={showModal} className="cursor-pointer">
                   Privacy Policy
                 </p>
