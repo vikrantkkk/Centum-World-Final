@@ -6,6 +6,7 @@ import allState from "../utils/In-State";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import { useState } from "react";
 import axios from "axios";
+import baseUrl from "../../baseUrl";
 
 const FeedbackCard = ({ name, state }) => {
   return (
@@ -38,7 +39,7 @@ const FranchiseTeam = () => {
 
   const states = allState.states.map((stateData) => stateData.state);
 
-  const fetchAllState = async () => {
+  const fetchAllFranchise = async () => {
     try {
       const response = await axios.get(`${baseUrl.apiUrl}` + 
         "/portfolio/get-all-franchises"
@@ -52,7 +53,7 @@ const FranchiseTeam = () => {
   };
 
   useEffect(() => {
-    fetchAllState();
+    fetchAllFranchise();
   }, []);
 
   
