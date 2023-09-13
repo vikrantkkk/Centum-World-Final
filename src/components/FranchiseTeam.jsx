@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { indianStates } from "../utils/In-State";
+import { citiesByState, indianStates } from "../utils/In-State";
+import allState from "../utils/In-State";
+import { useState } from "react";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import { useState } from "react";
 import axios from "axios";
@@ -15,7 +17,9 @@ const FeedbackCard = ({ name, state }) => {
             <p className="text-white font-medium text-[15px]">
               <span className="blue-text-gradient">@</span>{name}
             </p>
-            <p className="mt-1 text-secondary text-[12px] text-center">Franchise of {state}</p>
+            <p className="mt-1 text-secondary text-[12px] text-center">
+              Franchise of {state}
+            </p>
           </div>
           <img
             src={franchiseAvatar}
@@ -32,9 +36,8 @@ const FranchiseTeam = () => {
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
 
-  const handleStateChange = (e) => {
-    setSelectedState(e.target.value);
-  };
+
+  const states = allState.states.map((stateData) => stateData.state);
 
   const fetchAllState = async () => {
     try {
@@ -53,6 +56,25 @@ const FranchiseTeam = () => {
     fetchAllState();
   }, []);
 
+  
+  const handleStateChange = (e) => {
+    setData([])
+    const state = e.target.value;
+    console.log(state)
+    let data = {
+      state : e.target.value
+    }
+    axios.post("http://localhost:4000/portfolio/filter-franchise-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
+
+    .then((res)=>{
+      setData(res.data)
+      console.log(res.data)
+    })
+    .catch((err)=>{
+      console.log(err.response.data.message)
+    })
+  };
+
   return (
     <>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
@@ -67,12 +89,13 @@ const FranchiseTeam = () => {
                 className="bg-transparent border rounded-md"
                 id="in-state"
               >
-                <option value="">Select a State</option>
-                {indianStates.map((state, index) => (
-                  <option key={index} value={state} className="bg-primary">
+                <option value="" className="bg-primary">Select a State</option>
+                {states.map((state) => (
+                  <option key={state} value={state} className="bg-primary">
                     {state}
                   </option>
                 ))}
+
               </select>
           </div>
         </div>
