@@ -1,7 +1,6 @@
 {
   "name": "3dfolio",
   "homepage": "http://jettradefx.in",
-  "proxy": "http://localhost:4000",
   "private": true,
   "version": "0.0.0",
   "type": "module",

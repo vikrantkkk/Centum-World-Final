@@ -45,18 +45,13 @@ const Feedbacks = () => {
 
   return (
     <>
-      <div>
-        <h2 className={`${styles.sectionHeadText} mb-10 mt-32`}>
-          Team Members.
-        </h2>
-      </div>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div
           className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[250px]`}
         >
           <div>
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-              Franchise Team
+              Management Ecosystem
             </p>
           </div>
         </div>

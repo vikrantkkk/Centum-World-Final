@@ -22,12 +22,12 @@ function Select() {
       <select
         value={selectedOption}
         onChange={handleOptionChange}
-        className="bg-transparent border border-gray-300 rounded-md py-2 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 w-[150px]"
+        className="bg-transparent border border-gray-300 rounded-md py-2 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 w-[150px] cursor-pointer"
       >
-        <option value="" disabled>Login / Signup</option>
-        <option value="option1" class="bg-primary hover:bg-gray-200 ">TraderReferral Portal</option>
-        <option value="option2" class="bg-primary hover:bg-gray-200 ">BusinessPortal</option>
-        <option value="option3" class="bg-primary hover:bg-gray-200 ">Manager Portal</option>
+        <option value="" disabled hidden>Login / Signup</option>
+        <option value="option1" className="bg-primary hover:bg-gray-200 cursor-pointer">TraderReferral Portal</option>
+        <option value="option2" className="bg-primary hover:bg-gray-200 cursor-pointer">BusinessPortal</option>
+        <option value="option3" className="bg-primary hover:bg-gray-200 cursor-pointer">Manager Portal</option>
       </select>
     </div>
   );

@@ -37,8 +37,8 @@ const Member = () => {
       <Video />
       </div>
       <div>
-        <Feedbacks />
         <FranchiseTeam />
+        <Feedbacks />
         <TechTeam />
         <Founder />
       </div>
