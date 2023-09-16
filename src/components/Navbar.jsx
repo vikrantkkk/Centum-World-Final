@@ -70,11 +70,16 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              {nav.id !== "2" && nav.id !== "1"  ? (
+              {nav.id !== "2" &&
+              nav.id !== "https://centumo.centumworld.com/#/exchange/quick" ? (
                 <a href={`${nav.id}`}>{nav.title}</a>
               ) : (
                 <a
-                  href="http://apps.jettradefx.in/"
+                  href={
+                    nav.id == 2
+                      ? "http://trader.jettradefx.in/"
+                      : "https://centumo.centumworld.com/#/exchange/quick"
+                  }
                   target="_blank"
                   className="flex items-center gap-x-2 border p-2 rounded-lg hover:bg-[#398BF3] hover:text-white transition-all duration-200 group"
                 >
@@ -112,10 +117,19 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  {nav.id !== "http://trader.jettradefx.in/" ? (
+                  {nav.id !== "2" &&
+                  nav.id !==
+                    "https://centumo.centumworld.com/#/exchange/quick" ? (
                     <a href={`${nav.id}`}>{nav.title}</a>
                   ) : (
-                    <a href="http://apps.jettradefx.in/" target="_blank">
+                    <a
+                      href={
+                        nav.id == 2
+                          ? "http://trader.jettradefx.in/"
+                          : "https://centumo.centumworld.com/#/exchange/quick"
+                      }
+                      target="_blank"
+                    >
                       {nav.title}
                     </a>
                   )}

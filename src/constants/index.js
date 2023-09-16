@@ -46,7 +46,7 @@ export const navLinks = [
     title: "White Paper",
   },
   {
-    id: "1",
+    id: "https://centumo.centumworld.com/#/exchange/quick",
     title: "Centumo Swap",
   },
   {
