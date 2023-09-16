@@ -38,10 +38,6 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "/#work",
-    title: "Work",
-  },
-  {
     id: "/#contact",
     title: "Contact",
   },
@@ -50,7 +46,11 @@ export const navLinks = [
     title: "White Paper",
   },
   {
-    id: "http://trader.jettradefx.in/",
+    id: "1",
+    title: "Centumo Swap",
+  },
+  {
+    id: "2",
     title: "Trade Now",
   },
 ];
