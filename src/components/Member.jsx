@@ -9,6 +9,7 @@ import Video from "./Video";
 import { styles } from "../styles";
 import FranchiseTeam from "./FranchiseTeam";
 import State from "./State";
+import Toturials from "./Toturials";
 
 const Member = () => {
   return (
@@ -35,9 +36,11 @@ const Member = () => {
         </>
       </div>
       <div className="p-5">
-      <Video />
+        <Video />
       </div>
+
       <div>
+        <Toturials />
         <State />
         <FranchiseTeam />
         <Feedbacks />

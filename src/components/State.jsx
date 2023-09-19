@@ -36,7 +36,7 @@ const Feedbacks = () => {
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
   const states = allState.states.map((stateData) => stateData.state);
-  console.log(process.env.REACT_APP_BASE_URL);
+
  
 
   const fetchAllState = async () => {
