@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { founders } from "../constants";
@@ -7,11 +7,14 @@ import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import allState from "../utils/In-State";
 import axios from "axios";
 import baseUrl from "../../baseUrl";
-import { Button,Modal } from "antd";
+import { Button, Modal, message } from "antd";
+import OtpInput from 'react-otp-input';
+import { useNavigate } from "react-router-dom";
 
-const FeedbackCard = ({ name, state }) => {
+const FeedbackCard = ({ name,stateHandlerId, state }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const formattedState = state.join(", ");
+  const navigate = useNavigate()
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -21,49 +24,116 @@ const FeedbackCard = ({ name, state }) => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-  return (
-    
-   <>
-   {/* go to login moodal */}
 
-   <Modal
+  const [pin, setPin] = useState(Number);
+
+  const handlePinChange = (otp) => {
+    setPin(otp);
+
+  };
+
+  useEffect(() => {
+    isPinSix()
+  }, [pin]); 
+
+  const isPinSix = ()=>{
+    if(pin.length === 6){
+      console.log(typeof(pin),stateHandlerId)
+      let data = {
+        loginOtp: Number(pin),
+        stateHandlerId:stateHandlerId
+      }
+
+      axios.post("http://localhost:4000/state/state/state-verify-login-otp", data)
+      .then((res)=>{
+        message.success(res.data.message)
+        setIsModalVisible(false);
+        setTimeout(() => {
+          openInNewTab('http://business.jettradefx.in/');
+        },[2000]);
+        setPin('')
+       
+      })
+      .catch((err)=>{
+        message.warning(err.response.data.message)
+      })
+    }
+  }
+
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank');
+    if (newWindow) {
+      newWindow.opener = null;
+    }
+  };
+  
+
+  const otpInputStyles = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '200px',  // Adjust the width as needed
+  };
+
+  const inputStyle = {
+    backgroundColor: 'lightgray',  // Set the background color
+    width: '40px',  // Adjust the width of each input field
+    height: '40px',  // Adjust the height of each input field
+    marginRight: '5px',  // Adjust the spacing between input fields
+  };
+
+  
+  return (
+
+    <>
+      {/* go to login moodal */}
+
+      <Modal
         title="Verify PIN to Login"
-        visible={isModalVisible}
+        open={isModalVisible}
         onCancel={handleCancel}
         footer={[
           <Button key="cancel" onClick={handleCancel}>
             Cancel
           </Button>,
-          <Button style={{background:'#1890ff'}} key="ok" type="primary" onClick={handleCancel}>
-            Submit
-          </Button>,
         ]}
-        
+
       >
-     
+        <div>
+          <label>Enter 6-digit PIN:</label>
+          <OtpInput
+            numInputs={6}
+            value={pin}
+            separator={<span>-</span>}
+            onChange={handlePinChange}
+            renderInput={(props) => <input {...props} />}
+            isInputNum
+            inputStyle={inputStyle}
+            containerStyle={otpInputStyles}
+          />
+        </div>
       </Modal>
 
 
-     <div className="bg-black-200 p-10 rounded-3xl w-[300px] shadow-md shadow-[#151030]">
-      <div className="">
-        <div className="mt-8 flex flex-col-reverse items-center w-[200px] justify-center">
-          <div className="flex-1 flex flex-col items-center">
-            <p className="text-white font-medium text-[15px]">
-              <span className="blue-text-gradient">@</span>{name}
-            </p>
-            <p className="mt-1 text-secondary text-[12px] text-center">SHO of {formattedState}</p>
+      <div className="bg-black-200 p-10 rounded-3xl w-[300px] shadow-md shadow-[#151030]">
+        <div className="">
+          <div className="mt-8 flex flex-col-reverse items-center w-[200px] justify-center">
+            <div className="flex-1 flex flex-col items-center">
+              <p className="text-white font-medium text-[15px]">
+                <span className="blue-text-gradient">@</span>{name}
+              </p>
+              <p className="mt-1 text-secondary text-[12px] text-center">SHO of {formattedState}</p>
+            </div>
+            <img
+              src={franchiseAvatar}
+              alt={`feedback_by-${name}`}
+              className="rounded-full object-cover h-28 w-28"
+            />
+            <Button className="goToLogin" type="primary" onClick={showModal}>Go to Login</Button>
           </div>
-          <img
-            src={franchiseAvatar}
-            alt={`feedback_by-${name}`}
-            className="rounded-full object-cover h-28 w-28"
-          />
-          <Button className="goToLogin" type="primary" onClick={showModal}>Go to Login</Button>
+
         </div>
-        
       </div>
-    </div> 
-   </> 
+    </>
   );
 };
 
@@ -72,11 +142,11 @@ const Feedbacks = () => {
   const [data, setData] = useState([]);
   const states = allState.states.map((stateData) => stateData.state);
 
- 
+
 
   const fetchAllState = async () => {
     try {
-      const response = await axios.get(`${baseUrl.apiUrl}` + 
+      const response = await axios.get(`${baseUrl.apiUrl}` +
         "http://localhost:4000/portfolio/get-all-states"
       );
       console.log("Data fetched", response.data.data);
@@ -96,17 +166,17 @@ const Feedbacks = () => {
     const state = e.target.value;
     console.log(state)
     let data = {
-      state : e.target.value
+      state: e.target.value
     }
-    axios.post(`${baseUrl.apiUrl}` + "http://localhost:4000/portfolio/filter-sho-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}` + "http://localhost:4000/portfolio/filter-sho-by-state", data)//localhost:4000/portfolio/filter-franchise-by-state{
 
-    .then((res)=>{
-      setData(res.data)
-      console.log(res.data)
-    })
-    .catch((err)=>{
-      console.log(err.response.data.message)
-    })
+      .then((res) => {
+        setData(res.data)
+        console.log(res.data)
+      })
+      .catch((err) => {
+        console.log(err.response.data.message)
+      })
   };
 
   return (
@@ -120,19 +190,19 @@ const Feedbacks = () => {
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
               SHO MEMBER
             </p>
-              <select
-                value={selectedState}
-                onChange={handleStateChange}
-                className="bg-transparent border rounded-md"
-                id="in-state"
-              >
-                <option value="">Select a State</option>
-                {states.map((state) => (
-                  <option key={state} value={state} className="bg-primary">
-                    {state}
-                  </option>
-                ))}
-              </select>
+            <select
+              value={selectedState}
+              onChange={handleStateChange}
+              className="bg-transparent border rounded-md"
+              id="in-state"
+            >
+              <option value="">Select a State</option>
+              {states.map((state) => (
+                <option key={state} value={state} className="bg-primary">
+                  {state}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
         <div className="-mt-20 pb-14" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
@@ -140,6 +210,7 @@ const Feedbacks = () => {
             {data.map((item, index) => (
               <FeedbackCard
                 name={item.fname}
+                stateHandlerId={item.stateHandlerId}
                 key={item.fname}
                 index={index}
                 data={data}
