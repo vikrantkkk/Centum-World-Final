@@ -29,7 +29,7 @@ const FeedbackCard = ({ thumbnail, title, videoOne }) => {
                         <img
                             src={thumbnail}
                             alt={`feedback_by-${title}`}
-                            className="rounded-full object-cover h-50 w-50"
+                            className="rounded-full object-cover h-20 w-50"
                             onClick={handleImageClick}
                         />
                     </div>
@@ -37,7 +37,7 @@ const FeedbackCard = ({ thumbnail, title, videoOne }) => {
                 </div>
             </div>
             <Modal open={isModalVisible} onCancel={handleCloseModal} footer={null}>
-                <p>Title: {title}</p>
+                <div style={{fontFamily:"Calibri", fontSize:"20px", color:"#800080"}}>{title}</div>
                 <video src={videoOne} controls width="100%" height="400px" />
             </Modal>
         </div>
@@ -53,7 +53,7 @@ const Feedbacks = () => {
 
 
     const tutorialsVideos = async () => {
-        axios.get("http://localhost:4000/portfolio/get-all-videos-for-portfolio")
+        axios.get(`${baseUrl.apiUrl}`+"http://localhost:4000/portfolio/get-all-videos-for-portfolio")
             .then((res) => {
                 setData(res.data.videos)
             })
