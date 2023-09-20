@@ -1,18 +1,50 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { founders } from "../constants";
 import { citiesByState, indianStates } from "../utils/In-State";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
-import { useState } from "react";
 import allState from "../utils/In-State";
 import axios from "axios";
 import baseUrl from "../../baseUrl";
+import { Button,Modal } from "antd";
 
 const FeedbackCard = ({ name, state }) => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
   const formattedState = state.join(", ");
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  // Function to handle closing the modal
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
   return (
-    <div className="bg-black-200 p-10 rounded-3xl w-[300px] shadow-md shadow-[#151030]">
+    
+   <>
+   {/* go to login moodal */}
+
+   <Modal
+        title="Verify PIN to Login"
+        visible={isModalVisible}
+        onCancel={handleCancel}
+        footer={[
+          <Button key="cancel" onClick={handleCancel}>
+            Cancel
+          </Button>,
+          <Button style={{background:'#1890ff'}} key="ok" type="primary" onClick={handleCancel}>
+            Submit
+          </Button>,
+        ]}
+        
+      >
+     
+      </Modal>
+
+
+     <div className="bg-black-200 p-10 rounded-3xl w-[300px] shadow-md shadow-[#151030]">
       <div className="">
         <div className="mt-8 flex flex-col-reverse items-center w-[200px] justify-center">
           <div className="flex-1 flex flex-col items-center">
@@ -26,9 +58,12 @@ const FeedbackCard = ({ name, state }) => {
             alt={`feedback_by-${name}`}
             className="rounded-full object-cover h-28 w-28"
           />
+          <Button className="goToLogin" type="primary" onClick={showModal}>Go to Login</Button>
         </div>
+        
       </div>
-    </div>  
+    </div> 
+   </> 
   );
 };
 
@@ -42,7 +77,7 @@ const Feedbacks = () => {
   const fetchAllState = async () => {
     try {
       const response = await axios.get(`${baseUrl.apiUrl}` + 
-        "/portfolio/get-all-states"
+        "http://localhost:4000/portfolio/get-all-states"
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
@@ -63,7 +98,7 @@ const Feedbacks = () => {
     let data = {
       state : e.target.value
     }
-    axios.post(`${baseUrl.apiUrl}` + "/portfolio/filter-sho-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}` + "http://localhost:4000/portfolio/filter-sho-by-state", data )//localhost:4000/portfolio/filter-franchise-by-state{
 
     .then((res)=>{
       setData(res.data)
