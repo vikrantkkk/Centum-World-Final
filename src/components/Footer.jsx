@@ -55,8 +55,8 @@ export const Footer = () => {
                   Privacy Policy
                 </p>
               </div>
-              <div className="address flex flex-col">
-                <Select
+              {/* <div className="address flex flex-col"> */}
+                {/* <Select
                   defaultValue="Kolkata"
                   style={{ width: 120, marginBottom: 5}}
                   onChange={changeLocation}
@@ -75,8 +75,8 @@ export const Footer = () => {
                   {address === "Jharkhand"
                     ? "Jet Trade FX SOY MARKET, TAMBO CHOWK, CHAIBASA (JHARKHAND 833201)"
                     : ""}
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
           </div>
           <div className="flex flex-col gap-x-5 h-32 w-full">
