@@ -53,7 +53,7 @@ const Feedbacks = () => {
 
 
     const tutorialsVideos = async () => {
-        axios.get(`${baseUrl.apiUrl}`+"http://localhost:4000/portfolio/get-all-videos-for-portfolio")
+        axios.get(`${baseUrl.apiUrl}`+"/portfolio/get-all-videos-for-portfolio")
             .then((res) => {
                 setData(res.data.videos)
             })

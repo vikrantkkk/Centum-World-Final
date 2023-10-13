@@ -53,7 +53,7 @@ const FeedbackCard = ({ name,frenchiseId, state }) => {
         frenchiseId:frenchiseId,
         loginOtp:Number(pin)
       }
-      axios.post("http://localhost:4000/franchise/frenchise/frenchise-verify-login-otp", data)
+      axios.post(`${baseUrl.apiUrl}+/franchise/frenchise/frenchise-verify-login-otp`, data)
       .then((res)=>{
         message.success(res.data.message)
         setIsModalVisible(false);
@@ -138,8 +138,8 @@ const FranchiseTeam = () => {
 
   const fetchAllFranchise = async () => {
     try {
-      const response = await axios.get(`${baseUrl.apiUrl}` +
-        "http://localhost:4000/portfolio/portfolio/get-all-franchise"
+      const response = await axios.get(`${baseUrl.apiUrl} +
+        /portfolio/portfolio/get-all-franchise`
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
@@ -161,7 +161,7 @@ const FranchiseTeam = () => {
     let data = {
       state: e.target.value
     }
-    axios.post(`${baseUrl.apiUrl}` + "http://localhost:4000/portfolio/filter-franchise-by-state", data)//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}` + "/portfolio/filter-franchise-by-state", data)//localhost:4000/portfolio/filter-franchise-by-state{
 
       .then((res) => {
         setData(res.data)

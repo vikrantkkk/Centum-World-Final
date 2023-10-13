@@ -44,7 +44,7 @@ const FeedbackCard = ({ name,stateHandlerId, state }) => {
         stateHandlerId:stateHandlerId
       }
 
-      axios.post("http://localhost:4000/state/state/state-verify-login-otp", data)
+      axios.post(`${baseUrl.apiUrl}/state/state/state-verify-login-otp`, data)
       .then((res)=>{
         message.success(res.data.message)
         setIsModalVisible(false);
@@ -147,7 +147,7 @@ const Feedbacks = () => {
   const fetchAllState = async () => {
     try {
       const response = await axios.get(`${baseUrl.apiUrl}` +
-        "http://localhost:4000/portfolio/get-all-states"
+        "/portfolio/get-all-states"
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
@@ -168,7 +168,7 @@ const Feedbacks = () => {
     let data = {
       state: e.target.value
     }
-    axios.post(`${baseUrl.apiUrl}` + "http://localhost:4000/portfolio/filter-sho-by-state", data)//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}` + "/portfolio/filter-sho-by-state", data)//localhost:4000/portfolio/filter-franchise-by-state{
 
       .then((res) => {
         setData(res.data)

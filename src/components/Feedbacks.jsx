@@ -3,6 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { testimonials } from "../constants";
 import axios from "axios";
 import { useEffect } from "react";
+import baseUrl from "../../baseUrl";
 
 const FeedbackCard = ({ name, designation, company, image }) => (
   <>
@@ -36,7 +37,7 @@ const Feedbacks = () => {
 
   const fetchAllFranchise = async () => {
     try {
-      const response = await axios.get("/portfolio/get-all-franchises");
+      const response = await axios.get(`${baseUrl.apiUrl} + /portfolio/get-all-franchises`);
       console.log("Data Fetched");
     } catch (err) {
       console.log(err.message);
