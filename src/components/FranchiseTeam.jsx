@@ -138,8 +138,7 @@ const FranchiseTeam = () => {
 
   const fetchAllFranchise = async () => {
     try {
-      const response = await axios.get(`${baseUrl.apiUrl} +
-        /portfolio/portfolio/get-all-franchise`
+      const response = await axios.get(`${baseUrl.apiUrl}/portfolio/portfolio/get-all-franchise`
       );
       console.log("Data fetched", response.data.data);
       setData(response.data.data);
