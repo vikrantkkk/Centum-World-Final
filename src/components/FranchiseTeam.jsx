@@ -53,7 +53,7 @@ const FeedbackCard = ({ name,frenchiseId, state }) => {
         frenchiseId:frenchiseId,
         loginOtp:Number(pin)
       }
-      axios.post(`${baseUrl.apiUrl}+/franchise/frenchise/frenchise-verify-login-otp`, data)
+      axios.post(`${baseUrl.apiUrl}/franchise/frenchise/frenchise-verify-login-otp`, data)
       .then((res)=>{
         message.success(res.data.message)
         setIsModalVisible(false);
@@ -160,7 +160,7 @@ const FranchiseTeam = () => {
     let data = {
       state: e.target.value
     }
-    axios.post(`${baseUrl.apiUrl}` + "/portfolio/filter-franchise-by-state", data)//localhost:4000/portfolio/filter-franchise-by-state{
+    axios.post(`${baseUrl.apiUrl}/portfolio/filter-franchise-by-state`, data)//localhost:4000/portfolio/filter-franchise-by-state{
 
       .then((res) => {
         setData(res.data)
