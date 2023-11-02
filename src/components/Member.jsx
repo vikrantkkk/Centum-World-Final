@@ -33,7 +33,7 @@ const Member = () => {
         <div class="flex items-center justify-center mt-10">
           <a
             href="src/assets/JetTradeFX.pdf"
-            download="JetTradeFX Brouche"
+            download="JetTradeFX Broucher.pdf"
             class="relative px-7 py-4 font-medium text-white group"
           >
             <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
