@@ -37,7 +37,7 @@ const Feedbacks = () => {
 
   const fetchAllFranchise = async () => {
     try {
-      const response = await axios.get(`${baseUrl.apiUrl}/portfolio/get-all-franchises`);
+      const response = await axios.get(`${baseUrl.apiUrl}/portfolio/get-all-franchise`);
       console.log("Data Fetched");
     } catch (err) {
       console.log(err.message);
