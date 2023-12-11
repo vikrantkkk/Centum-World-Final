@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -38,13 +37,16 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .send(
+        "service_jzsl4lm",
+        "template_rks0t0u",
         {
           from_name: form.name,
-          to_name: "Jet Trade FX",
+          to_name: "Vikrant Kumar",
           from_email: form.email,
-          to_email: "enterYourMail@gmail.com",
+          to_email: "scentumworld@gmail.com",
           message: form.message,
-        }
+        },
+        "qoR2rMGkc83u2KsWw"
       )
       .then(
         () => {
@@ -68,12 +70,8 @@ const Contact = () => {
 
   return (
     <>
-      <div
-        className={`xl:mt-8 flex xl:flex-row flex-col-reverse gap-10`}
-      >
-        <div
-          className="flex-[0.75] text-white-100 text-opacity-100 p-8 rounded-2xl"
-        >
+      <div className={`xl:mt-8 flex xl:flex-row flex-col-reverse gap-10`}>
+        <div className="flex-[0.75] text-white-100 text-opacity-100 p-8 rounded-2xl">
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
           <form
@@ -127,9 +125,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden md:block hidden "
-        >
+        <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow-hidden md:block hidden ">
           <img
             src={ContactGif}
             alt="contact-image"

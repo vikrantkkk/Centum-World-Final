@@ -250,17 +250,17 @@ const founders = [
 
 const projects = [
   {
-    name: "Centum SaaS App Key",
+    name: "Centumo SaaS App Key",
     description: "User Friendly AI Apps",
     image: project1,
   },
   {
     name: "Centumo Token",
-    description: "Crypto Digital Asset",
+    description: "Crypto Digital Assets",
     image: project2,
   },
   {
-    name: "Centum Blockchain",
+    name: "Centumo Blockchain",
     description: "Distributed Ledger Technology (DLT)",
     image: project3,
   },
