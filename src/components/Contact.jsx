@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -37,11 +38,11 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .send(
-        "service_jzsl4lm",
-        "template_rks0t0u",
+        "service_rkjubno",
+        "template_yc78cxm",
         {
           from_name: form.name,
-          to_name: "Vikrant Kumar",
+          to_name: "Jettrade Fx",
           from_email: form.email,
           to_email: "scentumworld@gmail.com",
           message: form.message,
