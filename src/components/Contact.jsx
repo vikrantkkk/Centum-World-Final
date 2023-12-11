@@ -44,7 +44,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Jettrade Fx",
           from_email: form.email,
-          to_email: "scentumworld@gmail.com",
+            to_email: "scentumworld@gmail.com",
           message: form.message,
         },
         "qoR2rMGkc83u2KsWw"
