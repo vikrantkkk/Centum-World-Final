@@ -175,7 +175,7 @@ const FranchiseTeam = () => {
     <>
       <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
         <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
-          <div className="flex sm:flex-row flex-col gap-2">
+          <div className="flex sm:flex-row sm:justify-between flex-col gap-2">
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
               Franchise
             </p>
