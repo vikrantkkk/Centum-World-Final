@@ -20,7 +20,7 @@ const Member = () => {
           <h2 className={`${styles.sectionHeadText}`}>About Us</h2>
         </div>
 
-        <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify">
+        <p className=" text-secondary text-[17px] max-w-3xl leading-[30px] text-justify p-5">
           Jettrade Fx trading, also referred to as foreign exchange trading, is
           the buying and selling of currencies with the aim of profiting from
           fluctuations in their value . Trillions of dollars are traded in the

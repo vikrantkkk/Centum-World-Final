@@ -69,16 +69,16 @@ const Feedbacks = () => {
     return (
         <>
             <div>
-                <h2 className={`${styles.sectionHeadText} mt-32`}>Tutorials</h2>
+                {/* <h2 className={`${styles.sectionHeadText} mt-32`}>Tutorials</h2> */}
             </div>
             <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
-                <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
+                {/* <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
                     <div className="flex justify-between items-center">
                         <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
                             Tutorials
                         </p>
                     </div>
-                </div>
+                </div> */}
                 <div className="-mt-20 pb-14" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
                     <div className={`flex ${styles.paddingX} gap-10`}>
                         {data.map((item, index) => (

@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10`}
+        className={`xl:mt-8 flex xl:flex-row flex-col-reverse gap-10`}
       >
         <div
           className="flex-[0.75] text-white-100 text-opacity-100 p-8 rounded-2xl"

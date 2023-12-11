@@ -196,25 +196,25 @@ const testimonials = [
 
 const techTeam = [
   {
-    name: "B. Mandal",
-    designation: "Software Developer",
-    company: "Centum World",
-    image: badalAvatar,
-  },
-  {
-    name: "V. Kumar",
+    name: "Vikrant Kumar",
     designation: "Software Developer",
     company: "Centum World",
     image: vikrantAvatar,
   },
   {
-    name: "P. Kumar",
+    name: "Badal Mandal",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: badalAvatar,
+  },
+  {
+    name: "Prashant Kumar",
     designation: "Software Developer",
     company: "Centum World",
     image: prashantAvatar,
   },
   {
-    name: "L. Mahto",
+    name: "Lakhan Mahto",
     designation: "Software Developer",
     company: "Centum World",
     image: lakhan,
@@ -229,6 +229,12 @@ const techTeam = [
 
 const founders = [
   {
+    name: "Mr Jitendra Barik",
+    designation: "Founder, CMO",
+    company: "Centum World",
+    image: cofounder,
+  },
+  {
     name: "J. Bose",
     designation: "Founder, CEO",
     company: "Centum World",
@@ -240,12 +246,6 @@ const founders = [
     company: "Centum World",
     image: hrAvatar,
   },
-  {
-    name: "J. Barik",
-    designation: "Founder, CMO",
-    company: "Centum World",
-    image: cofounder,
-  },
 ];
 
 const projects = [
@@ -256,12 +256,12 @@ const projects = [
   },
   {
     name: "Centumo Token",
-    description: "dummy text",
+    description: "Crypto Digital Asset",
     image: project2,
   },
   {
     name: "Centum Blockchain",
-    description: "dummy text",
+    description: "Distributed Ledger Technology (DLT)",
     image: project3,
   },
 ];
