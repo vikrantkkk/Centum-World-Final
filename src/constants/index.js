@@ -27,6 +27,7 @@ import {
   cofounder,
   founder,
 } from "../assets";
+import tech2 from '../assets/franchise/franchise-avatar.png';
 
 export const navLinks = [
   {
@@ -196,53 +197,76 @@ const testimonials = [
 
 const techTeam = [
   {
-    name: "Vikrant Kumar",
+    name: "V. Kumar",
     designation: "Software Developer",
     company: "Centum World",
     image: vikrantAvatar,
   },
   {
-    name: "Badal Mandal",
+    name: "B. Mandal",
     designation: "Software Developer",
     company: "Centum World",
     image: badalAvatar,
   },
   {
-    name: "Prashant Kumar",
+    name: "P. Kumar",
     designation: "Software Developer",
     company: "Centum World",
     image: prashantAvatar,
   },
   {
-    name: "Lakhan Mahto",
+    name: "L. Mahto",
     designation: "Software Developer",
     company: "Centum World",
     image: lakhan,
   },
+ 
+];
+
+const techTeam2 = [
   {
-    name: "A. Gupta",
-    designation: "Software Developer Intern",
+    name: "S. Kumaran",
+    designation: "Software Developer",
     company: "Centum World",
-    image: animesh,
+    image: tech2,
   },
+  {
+    name: "P. Krishnamurty",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: tech2,
+  },
+  {
+    name: "T. lyer",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: tech2,
+  },
+  {
+    name: "S. Shetty",
+    designation: "Software Developer",
+    company: "Centum World",
+    image: tech2,
+  },
+ 
 ];
 
 const founders = [
   {
-    name: "Mr Jitendra Barik",
-    designation: "Founder, CMO",
+    name: "J. Barik",
+    designation: "CMO",
     company: "Centum World",
     image: cofounder,
   },
   {
     name: "J. Bose",
-    designation: "Founder, CEO",
+    designation: "Founder, CEO / AI Algorithm & Blockchain Security",
     company: "Centum World",
     image: founder,
   },
   {
     name: "A. Das",
-    designation: "GM, HR",
+    designation: "HR Head/ GM",
     company: "Centum World",
     image: hrAvatar,
   },
@@ -266,4 +290,4 @@ const projects = [
   },
 ];
 
-export { services, experiences, testimonials, projects, techTeam, founders };
+export { services, experiences, testimonials, projects, techTeam,techTeam2, founders };
