@@ -6,14 +6,13 @@ import {
   manage,
   software,
   project1,
+  lakhan,
   project2,
   project3,
   badalAvatar,
   vikrantAvatar,
   prashantAvatar,
-  lakhan,
   animesh,
-  raju,
   pacharia,
   sushil,
   sanjay2,
@@ -27,6 +26,48 @@ import {
   cofounder,
   founder,
 } from "../assets";
+import  pachari  from '../assets/new/bmm/pachari.png';
+import  deogam  from '../assets/new/bmm/deogam.png';
+import  balmuchu  from '../assets/new/bmm/balmuchu.png';
+import  desai  from '../assets/new/bmm/desai.png';
+import  ghai  from '../assets/new/bmm/ghai.png';
+
+import  thakur  from '../assets/new/franchise/thakur.png';
+import  rajak  from '../assets/new/franchise/rajak.png';
+import  gope  from '../assets/new/franchise/gope.png';
+import  balakrishnan  from '../assets/new/franchise/balakrishnan.png';
+import  bansal  from '../assets/new/franchise/bansal.png';
+import  mukherjee  from '../assets/new/franchise/mukherjee.png';
+
+import  purty  from '../assets/new/coreTeam/purty.png';
+import  banra  from '../assets/new/coreTeam/banra.png';
+import  biruli  from '../assets/new/coreTeam/biruli.png';
+import  birua  from '../assets/new/coreTeam/birua.png';
+
+import  lanuri  from '../assets/new/backOffice/laguri.png';
+import  nayak  from '../assets/new/backOffice/nayak.png';
+
+import  h23  from '../assets/new/hrd/23.png';
+
+import  raju  from '../assets/new/DigitalMarketing/raju.png';
+import  rakesh  from '../assets/new/DigitalMarketing/rakesh.png';
+
+
+import  vikrant from '../assets/new/techTeam/vikrant.png';
+import  badal  from '../assets/new/techTeam/badal.png';
+import  prashant  from '../assets/new/techTeam/prashant.png';
+import  lakhan1  from '../assets/new/techTeam/lakhan.png';
+import  kumaran  from '../assets/new/techTeam/kumaran.png';
+import  krishnamurty  from '../assets/new/techTeam/krishnamurty.png';
+import  iyer  from '../assets/new/techTeam/iyer.png';
+import  shetty  from '../assets/new/techTeam/shetty.png';
+
+import  jitendra  from '../assets/new/founder/jitendra.png';
+import  jayanta  from '../assets/new/founder/jayanta.png';
+import  Adas  from '../assets/new/founder/Adas.png';
+
+
+
 import tech2 from '../assets/franchise/franchise-avatar.png';
 
 export const navLinks = [
@@ -195,6 +236,156 @@ const testimonials = [
   },
 ];
 
+export const bmmData = [
+  {
+    name: "BMM : N. PACHARI",
+    image: pachari,
+  },
+  {
+    name: "BMM : G. DEOGAM",
+    image: deogam,
+  },
+  {
+    name: "BMM : H.K BALMUCHU",
+    image: balmuchu,
+  },
+  {
+    name: "BMM : R. DESAI",
+    image: desai,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: ghai,
+  },
+  
+];
+
+export const franchiseData = [
+  {
+    name: "BMM : N. PACHARI",
+    image: thakur,
+  },
+  {
+    name: "BMM : G. DEOGAM",
+    image: rajak,
+  },
+  {
+    name: "BMM : H.K BALMUCHU",
+    image: gope,
+  },
+  {
+    name: "BMM : R. DESAI",
+    image: balakrishnan,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: bansal,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: mukherjee,
+  },
+];
+
+export const coreTeam = [
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: purty,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: banra,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: biruli,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: birua,  
+  },
+]
+
+export const backOffice = [
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: lanuri,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: nayak,  
+  },
+  
+]
+
+export const hrd = [
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: h23,  
+  },
+]
+
+export const disitalMarketing = [
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: raju,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: rakesh,  
+  },
+]
+
+export const myTechTeam = [
+  {
+    name: "BMM : N. PACHARI",
+    image: vikrant,
+  },
+  {
+    name: "BMM : G. DEOGAM",
+    image: badal,
+  },
+  {
+    name: "BMM : H.K BALMUCHU",
+    image: prashant,
+  },
+  {
+    name: "BMM : R. DESAI",
+    image: lakhan1,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: kumaran,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: krishnamurty,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: iyer,
+  },
+  {
+    name: "BMM : N. GHAI",
+    image: shetty,
+  },
+];
+
+export const myFounder = [
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: jitendra,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: jayanta,  
+  },
+  {
+    name: "CORE TEAM : S. PURTY",
+    image: Adas,  
+  },
+]
+
 const techTeam = [
   {
     name: "V. Kumar",
@@ -222,6 +413,8 @@ const techTeam = [
   },
  
 ];
+
+
 
 const techTeam2 = [
   {

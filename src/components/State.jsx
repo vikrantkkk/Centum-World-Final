@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { founders } from "../constants";
+import { bmmData, founders } from "../constants";
 import { citiesByState, indianStates } from "../utils/In-State";
 import franchiseAvatar from "../assets/franchise/franchise-avatar.png";
 import allState from "../utils/In-State";
@@ -11,11 +11,13 @@ import { Button, Modal, message } from "antd";
 import OtpInput from "react-otp-input";
 import { useNavigate } from "react-router-dom";
 
+
+
 const FeedbackCard = ({ name, stateHandlerId, state }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const formattedState = state.join(", ");
   const navigate = useNavigate();
-
+  console.log(bmm)
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -139,7 +141,7 @@ const Feedbacks = () => {
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
   const states = allState.states.map((stateData) => stateData.state);
-
+  console.log(bmmData)
   const fetchAllState = async () => {
     try {
       const response = await axios.get(
@@ -189,19 +191,6 @@ const Feedbacks = () => {
             <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
               BMM
             </p>
-            <select
-              value={selectedState}
-              onChange={handleStateChange}
-              className="bg-transparent border rounded-md"
-              id="in-state"
-            >
-              <option value="">Select a State</option>
-              {states.map((state) => (
-                <option key={state} value={state} className="bg-primary">
-                  {state}
-                </option>
-              ))}
-            </select>
           </div>
         </div>
         <div
@@ -209,15 +198,10 @@ const Feedbacks = () => {
           style={{ overflowX: "auto", whiteSpace: "nowrap" }}
         >
           <div className={`flex ${styles.paddingX} gap-10`}>
-            {data.map((item, index) => (
-              <FeedbackCard
-                name={item.fname}
-                stateHandlerId={item.stateHandlerId}
-                key={item.fname}
-                index={index}
-                data={data}
-                state={item.selectedState}
-              />
+            {bmmData.map((item, index) => (
+              
+                <img src={item.image} className="w-80 h-64"/>
+             
             ))}
           </div>
         </div>

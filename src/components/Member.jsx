@@ -10,6 +10,12 @@ import { styles } from "../styles";
 import FranchiseTeam from "./FranchiseTeam";
 import State from "./State";
 import Toturials from "./Toturials";
+import Coreteam from "./Coreteam";
+import Backoffice from "./Backoffice";
+import Asshrd from "./Asshrd";
+import Disitalmarketing from "./Disitalmarketing";
+import Mytechteam from "./Mytechteam";
+import Com from "./Com";
 
 const Member = () => {
   return (
@@ -30,7 +36,7 @@ const Member = () => {
           governments, among others. Forex trading can be done through financial
           institutions, brokers, or electronic trading platforms.
         </p>
-        {/* <div class="flex items-center justify-center mt-10">
+        <div class="flex items-center justify-center mt-10">
           <a
             href="src/assets/JetTradeFX.pdf"
             download="JetTradeFX Broucher.pdf"
@@ -42,7 +48,7 @@ const Member = () => {
             <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
             <button class="relative">Download White Paper</button>
           </a>
-        </div> */}
+        </div>
       </div>
       <div className="p-5">
         <Video />
@@ -52,9 +58,15 @@ const Member = () => {
         <Toturials />
         <State />
         <FranchiseTeam />
-        <Feedbacks />
-        <TechTeam />
-        <Founder />
+        <Coreteam/>
+        <Backoffice/>
+        <Asshrd/>
+        <Disitalmarketing/>
+        <Mytechteam/>
+        <Com/>
+        {/* <Feedbacks />
+        <TechTeam /> */}
+        {/* <Founder /> */}
       </div>
       <div className="mb-10 -translate-y-40">
         <Accordion />
