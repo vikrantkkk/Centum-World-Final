@@ -183,6 +183,7 @@ const Feedbacks = () => {
       },
     ],
   };
+  
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
   const states = allState.states.map((stateData) => stateData.state);
@@ -242,10 +243,16 @@ const Feedbacks = () => {
           className="-mt-20 pb-14"
           style={{ overflowX: "auto", whiteSpace: "nowrap" }}
         >
-          <div className={`flex ${styles.paddingX} gap-10`}>
+          <div>
             <Slider {...sliderSettings}>
               {bmmData.map((item, index) => (
-                <img src={item.image} className="w-80 h-64" />
+                <div key={index}>
+                  <img
+                    src={item.image}
+                    className="w-80 h-64"
+                    alt={`carousel-item-${index}`}
+                  />
+                </div>
               ))}
             </Slider>
           </div>

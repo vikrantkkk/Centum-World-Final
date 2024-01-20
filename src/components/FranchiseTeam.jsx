@@ -11,6 +11,19 @@ import { Button, Modal, message } from "antd";
 import OtpInput from "react-otp-input";
 import { useNavigate } from "react-router-dom";
 import { franchiseData } from "../constants";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const CustomArrow = ({ onClick, className, icon }) => (
+  <div
+    className={className}
+    onClick={onClick}
+    style={{ padding: "0 75px 0 30px", zIndex: "99" }}
+  >
+    {icon}
+  </div>
+);
 
 const FeedbackCard = ({ name, frenchiseId, state }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -132,6 +145,39 @@ const FeedbackCard = ({ name, frenchiseId, state }) => {
 };
 
 const FranchiseTeam = () => {
+  const customPrevArrow = (
+    <CustomArrow className="slick-prev" icon="Previous" />
+  );
+  const customNextArrow = <CustomArrow className="slick-next" icon="Next" />;
+
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: customPrevArrow,
+    nextArrow: customNextArrow,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
 
@@ -189,10 +235,18 @@ const FranchiseTeam = () => {
           className="-mt-20 pb-14"
           style={{ overflowX: "auto", whiteSpace: "nowrap" }}
         >
-          <div className={`flex ${styles.paddingX} gap-10`}>
-            {franchiseData.map((item, index) => (
-              <img src={item.image} className="w-80 h-64"/>
-            ))}
+          <div>
+            <Slider {...sliderSettings}>
+              {franchiseData.map((item, index) => (
+                <div key={index}>
+                  <img
+                    src={item.image}
+                    className="w-80 h-64"
+                    alt={`carousel-item-${index}`}
+                  />
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>
