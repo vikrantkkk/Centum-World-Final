@@ -11,13 +11,25 @@ import { Button, Modal, message } from "antd";
 import OtpInput from "react-otp-input";
 import { useNavigate } from "react-router-dom";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+const CustomArrow = ({ onClick, className, icon }) => (
+  <div
+    className={className}
+    onClick={onClick}
+    style={{ padding: "0 75px 0 30px", zIndex: "99" }}
+  >
+    {icon}
+  </div>
+);
 
 const FeedbackCard = ({ name, stateHandlerId, state }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const formattedState = state.join(", ");
   const navigate = useNavigate();
-  console.log(bmm)
+  console.log(bmm);
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -138,10 +150,43 @@ const FeedbackCard = ({ name, stateHandlerId, state }) => {
 };
 
 const Feedbacks = () => {
+  const customPrevArrow = (
+    <CustomArrow className="slick-prev" icon="Previous" />
+  );
+  const customNextArrow = <CustomArrow className="slick-next" icon="Next" />;
+
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: customPrevArrow,
+    nextArrow: customNextArrow,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   const [selectedState, setSelectedState] = useState("");
   const [data, setData] = useState([]);
   const states = allState.states.map((stateData) => stateData.state);
-  console.log(bmmData)
+  console.log(bmmData);
   const fetchAllState = async () => {
     try {
       const response = await axios.get(
@@ -198,11 +243,11 @@ const Feedbacks = () => {
           style={{ overflowX: "auto", whiteSpace: "nowrap" }}
         >
           <div className={`flex ${styles.paddingX} gap-10`}>
-            {bmmData.map((item, index) => (
-              
-                <img src={item.image} className="w-80 h-64"/>
-             
-            ))}
+            <Slider {...sliderSettings}>
+              {bmmData.map((item, index) => (
+                <img src={item.image} className="w-80 h-64" />
+              ))}
+            </Slider>
           </div>
         </div>
       </div>

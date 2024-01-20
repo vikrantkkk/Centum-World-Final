@@ -32,8 +32,10 @@
     "react-player": "^2.12.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.14.1",
+    "react-slick": "^0.29.0",
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
+    "slick-carousel": "^1.8.1",
     "three": "^0.149.0"
   },
   "devDependencies": {
