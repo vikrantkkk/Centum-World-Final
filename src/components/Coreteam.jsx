@@ -69,7 +69,13 @@ const Coreteam = () => {
           <div >
           <Slider {...sliderSettings}>
           {coreTeam.map((item, index) => (
-              <img src={item.image} className="w-80 h-64"/>
+            <div key={index}>
+                  <img
+                    src={item.image}
+                    className="w-80 h-64"
+                    alt={`carousel-item-${index}`}
+                  />
+                </div>
             ))}
           </Slider>
           </div>

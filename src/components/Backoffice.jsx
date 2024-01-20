@@ -26,7 +26,7 @@ const Backoffice = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -70,7 +70,13 @@ const Backoffice = () => {
           <div >
             <Slider {...sliderSettings}>
               {backOffice.map((item, index) => (
-                <img src={item.image} className="w-80 h-64" />
+                <div key={index}>
+                  <img
+                    src={item.image}
+                    className="w-80 h-64"
+                    alt={`carousel-item-${index}`}
+                  />
+                </div>
               ))}
             </Slider>
           </div>
