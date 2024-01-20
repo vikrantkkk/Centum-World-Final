@@ -20,7 +20,7 @@ const Asshrd = () => {
           className="-mt-20 pb-14"
           style={{ overflowX: "auto", whiteSpace: "nowrap" }}
         >
-          <div className={`flex ${styles.paddingX} gap-10`}>
+          <div >
             {hrd.map((item, index) => (
               <img src={item.image} className="w-80 h-64"/>
             ))}
