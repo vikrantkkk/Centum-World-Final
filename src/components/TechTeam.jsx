@@ -39,7 +39,7 @@ const Feedbacks = () => {
   const customPrevArrow = <CustomArrow className="slick-prev">Previous</CustomArrow>;
   const customNextArrow = <CustomArrow className="slick-next">Next</CustomArrow>;
 
-  const sliderSettings = {
+  const technical = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -74,18 +74,18 @@ const Feedbacks = () => {
         <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
           Technical Team
         </p>
-        <p className="mb-14 mt-10">SaaS, AI Apps Development, NFT</p>
+        {/* <p className="mb-14 mt-10">SaaS, AI Apps Development, NFT</p> */}
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center items-center gap-10`}>
-        <Slider {...sliderSettings}>
+      <div >
+        <Slider {...technical}>
           {techTeam.map((testimonial, index) => (
             <FeedbackCard key={testimonial.name} {...testimonial} />
           ))}
         </Slider>
       </div>
-      <p className="mb-14 mt-10 text-center md:ml-10 lg:text-start">SaaS, AI Apps & Blockchain Dev</p>
-      <div className={`mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center items-center gap-10`}>
-        <Slider {...sliderSettings}>
+      {/* <p className="mb-14 mt-10 text-center md:ml-10 lg:text-start">SaaS, AI Apps & Blockchain Dev</p> */}
+      <div >
+        <Slider {...technical}>
           {techTeam2.map((testimonial, index) => (
             <FeedbackCard key={testimonial.name} {...testimonial} />
           ))}
