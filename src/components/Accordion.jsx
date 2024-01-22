@@ -38,7 +38,7 @@ function AccordionItem({ question, answer }) {
 
 function App() {
   return (
-    <div className="" id="faq">
+    <div className="mt-52" id="faq">
       <div className=" px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <h2 className={`${styles.sectionHeadText} mb-10`}>
           Frequently Asked Question(FAQ.)

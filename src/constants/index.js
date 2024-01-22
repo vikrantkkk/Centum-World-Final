@@ -336,7 +336,7 @@ export const digitalMarketing = [
   },
 ]
 
-export const myTechTeam = [
+export const myTechTeam1 = [
   {
     name: "BMM : N. PACHARI",
     image: vikrant,
@@ -352,7 +352,10 @@ export const myTechTeam = [
   {
     name: "BMM : R. DESAI",
     image: lakhan1,
-  },
+  }
+];
+
+export const myTechTeam2 = [
   {
     name: "BMM : N. GHAI",
     image: kumaran,

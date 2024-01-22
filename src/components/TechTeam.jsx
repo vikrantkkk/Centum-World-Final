@@ -77,22 +77,22 @@ const Feedbacks = () => {
         {/* <p className="mb-14 mt-10">SaaS, AI Apps Development, NFT</p> */}
       </div>
       <div >
-        <Slider {...technical}>
+        {/* <Slider {...technical}>
           {techTeam.map((testimonial, index) => (
             <FeedbackCard key={testimonial.name} {...testimonial} />
           ))}
-        </Slider>
+        </Slider> */}
       </div>
       {/* <p className="mb-14 mt-10 text-center md:ml-10 lg:text-start">SaaS, AI Apps & Blockchain Dev</p> */}
       <div >
-        <Slider {...technical}>
+        {/* <Slider {...technical}>
           {techTeam2.map((testimonial, index) => (
             <FeedbackCard key={testimonial.name} {...testimonial} />
           ))}
-        </Slider>
+        </Slider> */}
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper();
