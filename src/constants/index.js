@@ -325,7 +325,7 @@ export const hrd = [
   },
 ]
 
-export const disitalMarketing = [
+export const digitalMarketing = [
   {
     name: "CORE TEAM : S. PURTY",
     image: raju,  
@@ -385,6 +385,8 @@ export const myFounder = [
     image: Adas,  
   },
 ]
+
+
 
 const techTeam = [
   {

@@ -1,27 +1,58 @@
-import React from "react";
-import { backOffice } from "../constants";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import { backOffice } from "../constants";
 
-const CustomArrow = ({ onClick, className, icon }) => (
-  <div
-    className={className}
-    onClick={onClick}
-    style={{ padding: "0 75px 0 30px", zIndex: "99" }}
-  >
-    {icon}
-  </div>
-);
+const TeamSection = ({ title, data, sliderSettings }) => {
+  const sliderRef = useRef(null);
+  const handleNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
 
-const Backoffice = () => {
-  const customPrevArrow = (
-    <CustomArrow className="slick-prev" icon="Previous" />
+  const handlePrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
+  return (
+    <div className="mb-56">
+      <div className="text-3xl font-semibold w-full text-center mt-10">
+        {title}
+      </div>
+      <div className="w-full">
+        <Slider ref={sliderRef} {...sliderSettings}>
+          {data.map((item, index) => (
+            <div key={index} className="">
+              <div className="w-full flex justify-center items-center text-center mt-6">
+                <img
+                  src={item.image}
+                  alt="Profile"
+                  className="h-64 w-80 rounded-md  shadow-lg transition-transform transform hover:scale-105 duration-300"
+                />
+              </div>
+            </div>
+          ))}
+        </Slider>
+        <div className="flex justify-center gap-8 mt-3">
+          <div onClick={handlePrev}>
+            <FaArrowLeft className="" />
+          </div>
+          <div onClick={handleNext}>
+            <FaArrowRight className="" />
+          </div>
+        </div>
+      </div>
+    </div>
   );
-  const customNextArrow = <CustomArrow className="slick-next" icon="Next" />;
+};
 
+const Founder = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -30,9 +61,7 @@ const Backoffice = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true,
-    prevArrow: customPrevArrow,
-    nextArrow: customNextArrow,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -50,40 +79,17 @@ const Backoffice = () => {
       },
     ],
   };
-
   return (
     <>
-      <div className={`bg-black-100 rounded-[20px] overflow-x-auto`}>
-        <div
-          className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}
-        >
-          <div className="flex sm:flex-row sm:justify-between flex-col gap-2">
-            <p className={`${styles.sectionSubText} ${styles.heroSubText}`}>
-              Back office
-            </p>
-          </div>
-        </div>
-        <div
-          className="-mt-20 pb-14"
-          style={{ overflowX: "auto", whiteSpace: "nowrap" }}
-        >
-          <div >
-            <Slider {...sliderSettings}>
-              {backOffice.map((item, index) => (
-                <div key={index}>
-                  <img
-                    src={item.image}
-                    className="w-80 h-64"
-                    alt={`carousel-item-${index}`}
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
+      <div>
+        <TeamSection
+          title="backOffice"
+          data={backOffice}
+          sliderSettings={sliderSettings}
+        />
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Backoffice, "");
+export default Founder;
