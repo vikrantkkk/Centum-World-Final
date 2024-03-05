@@ -24,34 +24,35 @@ const TeamSection = ({ title, data, sliderSettings }) => {
   };
 
   return (
-    <div className="mt-20">
-      <div className="text-3xl font-semibold w-full text-center mt-10">
-        {title}
-      </div>
-      <div className="w-full">
-        <Slider ref={sliderRef} {...sliderSettings}>
-          {data.map((item, index) => (
-            <div key={index} className="">
-              <div className="w-full flex justify-center items-center text-center mt-6">
-                <img
-                  src={item.image}
-                  alt="Profile"
-                  className="h-64 w-80 rounded-md  shadow-lg transition-transform transform hover:scale-105 duration-300"
-                />
-              </div>
-            </div>
-          ))}
-        </Slider>
-        <div className="flex justify-center gap-8 mt-3">
-          <div onClick={handlePrev}>
-            <FaArrowLeft className="" />
-          </div>
-          <div onClick={handleNext}>
-            <FaArrowRight className="" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <></>
+    // <div className="mt-20">
+    //   <div className="text-3xl font-semibold w-full text-center mt-10">
+    //     {title}
+    //   </div>
+    //   <div className="w-full">
+    //     <Slider ref={sliderRef} {...sliderSettings}>
+    //       {data.map((item, index) => (
+    //         <div key={index} className="">
+    //           <div className="w-full flex justify-center items-center text-center mt-6">
+    //             <img
+    //               src={item.image}
+    //               alt="Profile"
+    //               className="h-64 w-80 rounded-md  shadow-lg transition-transform transform hover:scale-105 duration-300"
+    //             />
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </Slider>
+    //     <div className="flex justify-center gap-8 mt-3">
+    //       <div onClick={handlePrev}>
+    //         <FaArrowLeft className="" />
+    //       </div>
+    //       <div onClick={handleNext}>
+    //         <FaArrowRight className="" />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
@@ -90,7 +91,7 @@ const Founder = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <TeamSection
           title="Digital Marketing"
           data={digitalMarketing}
@@ -109,7 +110,7 @@ const Founder = () => {
             </button>
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

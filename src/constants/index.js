@@ -325,16 +325,16 @@ export const hrd = [
   },
 ]
 
-export const digitalMarketing = [
-  {
-    name: "CORE TEAM : S. PURTY",
-    image: raju,  
-  },
-  {
-    name: "CORE TEAM : S. PURTY",
-    image: rakesh,  
-  },
-]
+// export const digitalMarketing = [
+//   {
+//     name: "CORE TEAM : S. PURTY",
+//     image: raju,  
+//   },
+//   {
+//     name: "CORE TEAM : S. PURTY",
+//     image: rakesh,  
+//   },
+// ]
 
 export const myTechTeam1 = [
   {
