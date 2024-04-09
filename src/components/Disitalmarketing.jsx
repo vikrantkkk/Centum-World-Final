@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { digitalMarketing } from "../constants";
 import brochurePDF from '../assets/pdf/brochure.pdf'
 import { saveAs } from "file-saver";
 

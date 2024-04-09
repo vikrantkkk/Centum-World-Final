@@ -31,7 +31,6 @@ function Select() {
         <option value="login" hidden>Login / Signup</option>
         <option value="option1" className="bg-primary hover:bg-gray-200 cursor-pointer">Apps Portal</option>
         <option value="option2" className="bg-primary hover:bg-gray-200 cursor-pointer">Business Portal</option>
-        <option value="option3" className="bg-primary hover:bg-gray-200 cursor-pointer">Manager Portal</option>
       </select>
     </div>
   );
