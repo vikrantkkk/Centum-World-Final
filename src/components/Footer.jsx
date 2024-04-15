@@ -108,7 +108,7 @@ export const Footer = () => {
           <p>support@centumworld.com</p>
           <p>&copy; copyright. All right reserved 2023</p>
         </div>
-        <p className="">
+        <p className=" mx-2">
           Disclaimer: Trading are subject to market risk. Read all scheme
           related document carefully
         </p>
