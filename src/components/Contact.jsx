@@ -74,7 +74,7 @@ const Contact = () => {
       <div className={`xl:mt-8 flex xl:flex-row flex-col-reverse gap-10`}>
         <div className="flex-[0.75] text-white-100 text-opacity-100 p-8 rounded-2xl">
           <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
+          <h3 className={`${styles.sectionHeadText}`}>Contact</h3>
           <form
             ref={formRef}
             onSubmit={handleSubmit}

@@ -16,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px]  w-72 md:w-52 flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -36,7 +36,7 @@ const About = () => {
   return (
     <>
       <div>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </div>
 
       <p
@@ -56,7 +56,7 @@ const About = () => {
         environment with user-friendliness and exceptional support.
       </p>
 
-      <p className={`${styles.sectionSubText} mt-10`}>Services</p>
+      <p  className={`${styles.sectionSubText} mt-10 text-white  mb-10`}>Services</p>
       <div className=" flex flex-wrap gap-10 justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
